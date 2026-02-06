@@ -12,7 +12,7 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img d-flex justify-content-center">
-                            <img src="./assets/img/service/auditory_verhal_therapy_2.png" alt="Image" class="img-fluid" style="width: 600px;">
+                            <img src="./assets/img/service/autism 2.png" alt="Image" class="img-fluid" style="width: 600px;">
                         </div>
                         <div class="ul-service-details-txt">
                             <h2 class="ul-service-details-title">Autism / ADHD Therapy</h2>

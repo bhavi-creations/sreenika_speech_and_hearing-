@@ -58,43 +58,10 @@ $count_stmt->close();
 
 $conn->close();
 ?>
-<style>
-    .blog-title,
-    .main-content,
-    .main-content *,
-    .full-content,
-    .full-content * {
-
-        /* color: #EDC967 !important; */
-        /* color: #D2AC47!important; */
-        /* color: #F7EF8A !important; */
-        /* color: #f8bf04 !important; */
-        /* color: #C9A227 !important; */
-        /* Gold */
-    }
-
-    .blogs_color {
-        /* color:  #F7EF8A !important; */
-        /* padding-top: 100px !important; */
-    }
-
-    /* .fullblogs_section {
-        margin-bottom: -50px !important;
-    } */
-
-    .fullblogs_section_1 {
-        /* background-color: black !important;
-        color: #F7EF8A !important; */
-        /* color: #f4c21f !important; */
-        /* padding-bottom: 20px !important; */
-    }
-</style>
 
 <?php include 'header.php'; ?>
 
-
-
-<main class="fullblogs_section">
+<main>
     <div class="container blog-detailed" style="padding-top: 50px;">
 
         <!-- Language buttons -->
@@ -112,7 +79,6 @@ $conn->close();
                 తెలుగు
             </button>
         </div>
-
 
 
         <?php if (!empty($service)) { ?>
@@ -176,9 +142,9 @@ $conn->close();
 
 
         <!-- Title -->
-        <h4 class="blog-title text-center mt-5" style="color:#C9A227; font-weight:800;">
+        <h4 class="blog-title text-center mt-5" style="color:#283779; font-weight:800;">
             <span id="title-en"><?php echo $title; ?></span>
-            <span id="title-te" style="display:none;" style="color:#C9A227;"><?php echo $telugu_title; ?></span>
+            <span id="title-te" style="display:none;"><?php echo $telugu_title; ?></span>
         </h4>
 
         <!-- Contents -->
@@ -201,6 +167,7 @@ $conn->close();
             <button id="dislike-btn" class="btn btn-outline-danger">
                 👎 Dislike (<span id="dislike-count"><?php echo $dislikes_count ?? 0; ?></span>)
             </button>
+            
         </div> -->
 
     </div>
@@ -209,14 +176,12 @@ $conn->close();
 
 
 
-</main>
 
 
-<div class="fullblogs_section_1 mt-5">
-    <div class="container ">
-        <div class="blogs_side ">
+    <div class="container">
+        <div class="blogs_side my-5">
             <div class="side-bar">
-                <h1 class="d-flex justify-content-center my-3 blogs_color">LATEST BLOGS</h1>
+                <h1 class="d-flex justify-content-center my-3">LATEST BLOGS</h1>
                 <div class="swiper blog-swiper">
                     <div class="swiper-wrapper">
                         <?php
@@ -264,8 +229,8 @@ $conn->close();
             </div>
         </div>
     </div>
-</div>
-<?php include 'footer.php'; ?>
+</main>
+
 
 <!-- LANGUAGE SWITCH SCRIPT -->
 <script>
@@ -373,6 +338,8 @@ $conn->close();
         },
     });
 </script>
+
+
 <script>
     const buttons = document.querySelectorAll('.lang-btn');
 
@@ -391,3 +358,4 @@ $conn->close();
 </body>
 
 </html>
+<?php include 'footer.php' ; ?>

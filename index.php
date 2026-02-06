@@ -356,14 +356,14 @@
 
             <div class="rjy-gallery-card">
                 <img src="./assets/img/service/square_1.jpg"
-                
+
                     alt="Gallery 5" class="rjy-gallery-photo">
                 <div class="rjy-gallery-overlay">
                     <i class="bi bi-briefcase-fill rjy-gallery-icon"></i>
                     <!-- <span class="rjy-gallery-label">Corporate Buildings</span> -->
                 </div>
             </div>
-              <div class="rjy-gallery-card">
+            <div class="rjy-gallery-card">
                 <img src="./assets/img/service/sqare2.jpg"
                     alt="Gallery 5" class="rjy-gallery-photo">
                 <div class="rjy-gallery-overlay">
@@ -552,7 +552,8 @@
                         </div>
                         <div class="rjy-contact-data">
                             <h5>Our Location</h5>
-                            <p>XRW2+HV9, Aditya Nagar<br>Rajamahendravaram, AP 533107</p>
+                            <p> F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049
+                            </p>
                         </div>
                     </div>
 
@@ -562,7 +563,7 @@
                         </div>
                         <div class="rjy-contact-data">
                             <h5>Phone Number</h5>
-                            <p>+91 96522 39999</p>
+                            <p>+91 93921 89262</p>
                         </div>
                     </div>
 
@@ -572,7 +573,7 @@
                         </div>
                         <div class="rjy-contact-data">
                             <h5>Email Address</h5>
-                            <p>srinika@gmail.com</p>
+                            <p>sreenikaspeechand@gmail.com</p>
                         </div>
                     </div>
 
@@ -582,7 +583,7 @@
                         </div>
                         <div class="rjy-contact-data">
                             <h5>Business Hours</h5>
-                            <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: Closed</p>
+                            <p>Mon - sun: 9:00 AM - 9:00 PM</p>
                         </div>
                     </div>
                 </div>
@@ -595,47 +596,39 @@
                         Send Us a Message
                     </h3>
 
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <input type="text" class="rjy-form-input" placeholder="Your Name *" required>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <input type="email" class="rjy-form-input" placeholder="Your Email *" required>
-                            </div>
-                        </div>
+                    <form action="contactform.php" method="POST" class="contact-form">
 
                         <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <input type="tel" class="rjy-form-input" placeholder="Phone Number">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="contactname" class="form-control"
+                                    placeholder="Your Name" required>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <select class="rjy-form-select">
-                                    <option selected>Select Service</option>
-                                    <option value="1">TMT Steel Bars</option>
-                                    <option value="2">Structural Steel</option>
-                                    <option value="3">MS Products</option>
-                                    <option value="4">Steel Sheets & Plates</option>
-                                    <option value="5">Binding Wire</option>
-                                    <option value="6">Angles & Beams</option>
-                                </select>
+
+                            <div class="col-md-6 form-group">
+                                <input type="email" name="contactemail" class="form-control"
+                                    placeholder="Your Email" required>
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="contactsubject" class="form-control"
+                                    placeholder="Subject">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="contactnumber" class="form-control"
+                                    placeholder="Phone Number" required>
                             </div>
                         </div>
 
-                        <div class="mb-4">
-                            <input type="text" class="rjy-form-input" placeholder="Subject">
+                        <div class="form-group">
+                            <textarea name="contactmessage" rows="6"
+                                class="form-control" placeholder="Your Message" required></textarea>
                         </div>
 
-                        <div class="mb-4">
-                            <textarea class="rjy-form-textarea" rows="6" placeholder="Your Message *"
-                                required></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="btn-send">Send Message</button>
                         </div>
 
-                        <button type="submit" class="rjy-submit-btn">
-                            <span>
-                                <i class="bi bi-send-fill"></i> Send Message
-                            </span>
-                        </button>
                     </form>
                 </div>
             </div>

@@ -1379,7 +1379,7 @@ a {
 }
 
 .blog-card-text {
-    color: #000000 !important;
+    color: #ffffff !important;
     /* color: #ffffff !important; */
     font-weight: 700;
     padding: 10px 30px !important;
@@ -1419,7 +1419,10 @@ a {
 }
 
 .background_sidebar {
-    background-color: #C9A227;
+    /* background-color: #C9A227; */
+    background-color: rgba(0, 34, 68, 0.9);
+    color: white !important;
+    
     /* background-color: #94beeb; */
 }
 

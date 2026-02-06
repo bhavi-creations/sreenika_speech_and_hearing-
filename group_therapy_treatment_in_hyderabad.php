@@ -12,7 +12,7 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img d-flex justify-content-center">
-                            <img src="./assets/img/service/Impedance_Audiometry _2.png" alt="Image" class="img-fluid" style="width: 600px;">
+                            <img src="./assets/img/service/group therapy 2.png" alt="Image" class="img-fluid" style="width: 600px;">
                         </div>
                         <div class="ul-service-details-txt">
                             <h2 class="ul-service-details-title">Group Therapy</h2>

@@ -148,7 +148,7 @@
         <div class="row">
             <div class="col-md-4 mt-5">
                 <div class="service-card shadow-sm">
-                    <img src="./assets/img/service/speech_therapy_1.png"
+                    <img src="./assets/img/service/Speech assesment.png"
                         alt="Speech Therapy">
                     <div class="p-4">
                         <h4 class="fw-bold">Speech Assessment</h4>
@@ -173,7 +173,7 @@
 
             <div class="col-md-4 mt-5">
                 <div class="service-card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500"
+                    <img src="./assets/img/service/ocuupational.png"
                         alt="Speech Therapy">
                     <div class="p-4">
                         <h4 class="fw-bold">Occupational Therapy</h4>
@@ -199,7 +199,7 @@
 
             <div class="col-md-4 mt-5">
                 <div class="service-card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500"
+                    <img src="./assets/img/service/autism.png"
                         alt="Speech Therapy">
                     <div class="p-4">
                         <h4 class="fw-bold">Autism / ADHD Therapy</h4>
@@ -239,7 +239,7 @@
 
             <div class="col-md-4 mt-5">
                 <div class="service-card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500"
+                    <img src="./assets/img/service/Sturring theraphy.png"
                         alt="Speech Therapy">
                     <div class="p-4">
                         <h4 class="fw-bold">Stammering / Stuttering Therapy</h4>
@@ -268,7 +268,7 @@
 
             <div class="col-md-4 mt-5">
                 <div class="service-card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500"
+                    <img src="./assets/img/service/special educations.png"
                         alt="Speech Therapy">
                     <div class="p-4">
                         <h4 class="fw-bold">Special Education</h4>
@@ -308,7 +308,7 @@
 
             <div class="col-md-4 mt-5">
                 <div class="service-card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500"
+                    <img src="./assets/img/service/group therapy.png"
                         alt="Speech Therapy">
                     <div class="p-4">
                         <h4 class="fw-bold">Group Therapy</h4>
@@ -447,7 +447,7 @@
             </div>
             <div class="col-md-4 mt-5">
                 <div class="service-card shadow-sm">
-                    <img src="./assets/img/service/"
+                    <img src="./assets/img/service/ear_molds.png"
                         alt="Speech Therapy">
                     <div class="p-4">
                         <h4 class="fw-bold">Ear Moulds/Ear Plugs</h4>

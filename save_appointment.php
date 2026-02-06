@@ -53,8 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "04:00 PM - 05:00 PM",
             "05:00 PM - 06:00 PM",
             "06:00 PM - 07:00 PM",
-            "07:00 PM - 08:30 PM",
-            
+            "07:00 PM - 08:00 PM",
+            "08:00 PM - 09:00 PM",
+
         ];
 
         if (
@@ -63,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ($type == 'afternoon' && in_array($slot, $afternoonSlots))
         ) {
             echo "<script>
-                alert('".$row['reason']."');
+                alert('" . $row['reason'] . "');
                 window.location='index.php';
             </script>";
             exit;
@@ -136,7 +137,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ";
 
         $mailDoctor->send();
-
     } catch (Exception $e) {
         echo 'Doctor Mail Error: ' . $mailDoctor->ErrorInfo;
         exit;
@@ -188,9 +188,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             alert('Appointment booked successfully');
             window.location='index.php';
         </script>";
-
     } catch (Exception $e) {
         echo 'Patient Mail Error: ' . $mailPatient->ErrorInfo;
     }
 }
-?>

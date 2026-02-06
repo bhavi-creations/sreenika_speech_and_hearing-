@@ -12,7 +12,7 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img">
-                            <img src="./assets/img/service/articulation_therapy_1.png" alt="Image" class="img-fluid">
+                            <img src="./assets/img/service/ear_molds 2.png" alt="Image" class="img-fluid">
                         </div>
                         <div class="ul-service-details-txt">
                             <h2 class="ul-service-details-title">Ear Moulds / Ear Plugs</h2>
