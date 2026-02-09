@@ -207,15 +207,15 @@
     border: 2px solid transparent;
 }
 
-.ul-service-details-sidebar-links li a:hover,
-.ul-service-details-sidebar-links li a.active {
-    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-    background: linear-gradient(135deg, black 0%, grey 100%);
+    /* .ul-service-details-sidebar-links li a:hover,
+    .ul-service-details-sidebar-links li a.active {
+    
+        background: linear-gradient(135deg, black 0%, grey 100%);
 
-    color: white;
-    transform: translateX(5px);
-    border-color: #667eea;
-}
+        color: white;
+        transform: translateX(5px);
+        border-color: #667eea;
+    } */
 
 .ul-service-details-sidebar-links li a i {
     font-size: 14px;
