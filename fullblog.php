@@ -134,13 +134,6 @@ $conn->close();
         </div>
 
 
-
-
-        <!-- SERVICE BADGE -->
-        <!-- SERVICE BADGE -->
-
-
-
         <!-- Title -->
         <h4 class="blog-title text-center mt-5" style="color:#283779; font-weight:800;">
             <span id="title-en"><?php echo $title; ?></span>
