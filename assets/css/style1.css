@@ -616,4 +616,17 @@
 
 .advantage-card .feature-card-header {
     background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}*/
+
+
+
+.apppointment_button{
+    background-color: rgba(0, 34, 68, 0.9);
+    border-radius: 10px;
+    color: rgba(0, 34, 68, 0.9) !important;
+}
+
+.apppointment_button :hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }

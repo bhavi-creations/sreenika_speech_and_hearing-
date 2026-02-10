@@ -116,7 +116,7 @@
                     <!-- <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="appointment.php">Appointment</a></li>
+                    <li class="nav-item apppointment_button"><a class="nav-link" href="appointment.php">Appointment</a></li>
 
                 </ul>
             </div>

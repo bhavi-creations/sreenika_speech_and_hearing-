@@ -6,7 +6,7 @@
         <div class="row align-items-center">
 
             <!-- Left Column - Stats -->
-            <div class="col-lg-2 col-md-12 order-lg-1 order-2">
+            <div class="col-lg-2 col-md-12 order-lg-1 order-2 d-none d-md-block">
                 <div class="stats-column">
                     <div class="stat-item fade-in-up">
                         <div class="stat-number" data-target="10000">0+</div>
@@ -81,7 +81,7 @@
 </section>
 
 
-
+<!-- 
 <section class="about-section">
     <div class="container">
         <div class="row g-4 justify-content-center">
@@ -112,7 +112,112 @@
 
         </div>
     </div>
+</section> -->
+
+<section class="shs-about-section">
+    <div class="container">
+
+        <h2 class="shs-title">About Us</h2>
+        <p class="shs-subtitle">Your Partner in Communication Excellence</p>
+
+        <div class="shs-main-card">
+            <p class="shs-intro">
+                <strong>Sreenika Hearing and Speech</strong> is dedicated to helping individuals communicate with confidence and live life to the fullest. We provide comprehensive hearing and speech care using a compassionate, patient-centered approach.
+            </p>
+
+            <div class="shs-grid">
+
+
+
+
+
+                <div class="shs-feature-card">
+                    <i class="fas fa-user-md shs-icon"></i>
+                    <h3 class="shs-feature-title">Expert Team</h3>
+                    <p class="text-muted small">Qualified and experienced Audiologists and Speech-Language Pathologists dedicated to your care.</p>
+                </div>
+
+
+
+
+
+                <div class="shs-feature-card">
+                    <i class="fas fa-user-md shs-icon"></i>
+                    <h3 class="shs-feature-title">Our Mission</h3>
+                    <p class="text-muted small">To provide world-class diagnostic and rehabilitative services for individuals with speech and hearing challenges. We strive to empower our patients through personalized care, advanced technology, and compassionate support to improve their quality of life and communication.</p>
+                </div>
+
+
+
+
+                <div class="shs-feature-card">
+                    <i class="fas fa-user-md shs-icon"></i>
+                    <h3 class="shs-feature-title">Our Vision</h3>
+                    <p class="text-muted small">To be a leader in speech and hearing healthcare, creating a world where every individual has the opportunity to communicate effectively and live a life without barriers.</p>
+                </div>
+
+                <div class="shs-feature-card">
+                    <i class="fas fa-users shs-icon"></i>
+                    <h3 class="shs-feature-title">All Ages Welcome</h3>
+                    <p class="text-muted small">Comprehensive care for both children and adults with personalized treatment plans.</p>
+                </div>
+
+                <div class="shs-feature-card">
+                    <i class="fas fa-microscope shs-icon"></i>
+                    <h3 class="shs-feature-title">Advanced Technology</h3>
+                    <p class="text-muted small">State-of-the-art diagnostic equipment and modern hearing aid solutions.</p>
+                </div>
+
+                <div class="shs-feature-card">
+                    <i class="fas fa-clipboard-check shs-icon"></i>
+                    <h3 class="shs-feature-title">Evidence-Based Care</h3>
+                    <p class="text-muted small">Therapy techniques grounded in research ensuring effective treatment outcomes.</p>
+                </div>
+            </div>
+
+            <div class="shs-services-wrapper">
+                <h3 class="text-center mb-4 shs-feature-title" style="font-size: 2rem;">Conditions We Address</h3>
+                <ul class="shs-list">
+                    <li><i class="fas fa-volume-up"></i> Hearing Loss</li>
+                    <li><i class="fas fa-child"></i> Speech Delay</li>
+                    <li><i class="fas fa-comments"></i> Language Disorders</li>
+                    <li><i class="fas fa-microphone"></i> Stammering/Stuttering</li>
+                    <li><i class="fas fa-volume-down"></i> Voice Problems</li>
+                    <li><i class="fas fa-handshake"></i> Communication Difficulties</li>
+                </ul>
+            </div>
+
+            <div class="shs-values-wrapper mt-5">
+                <h3 class="text-center shs-feature-title" style="font-size: 2.2rem;">What Drives Our Care</h3>
+                <div class="shs-values-grid">
+                    <div class=" shs-value-item">
+                        <i class="fas fa-heart shs-icon" style="font-size: 2rem;"></i>
+                        <h4 class="h5 fw-bold">Compassionate Approach</h4>
+                        <p class="text-muted small">We understand that communication challenges affect every aspect of life. Our team provides care with empathy.</p>
+                    </div>
+                    <div class="shs-value-item">
+                        <i class="fas fa-user-check shs-icon" style="font-size: 2rem;"></i>
+                        <h4 class="h5 fw-bold">Personalized Plans</h4>
+                        <p class="text-muted small">Every individual is unique. We create customized assessment and therapy plans tailored to you.</p>
+                    </div>
+                    <div class="shs-value-item">
+                        <i class="fas fa-trophy shs-icon" style="font-size: 2rem;"></i>
+                        <h4 class="h5 fw-bold">Long-Term Results</h4>
+                        <p class="text-muted small">Our goal extends beyond treatment—we focus on lasting improvement in communication skills.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shs-footer-quote">
+                <i class="fas fa-quote-left mb-3" style="font-size: 2rem; opacity: 0.6;"></i>
+                <p>At Sreenika Hearing and Speech, we walk alongside you on your journey toward better hearing, clearer speech, and stronger communication.</p>
+            </div>
+        </div>
+
+    </div>
 </section>
+
+
 
 <!-- service section  -->
 

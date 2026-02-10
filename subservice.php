@@ -188,19 +188,19 @@
 
 
 
-            <li><a class="s-item speech" href="behind_the_ear_treatment_in_hyderabad.php">Behind The Ear (BTE)</a></li>
-            <li><a class="s-item speech" href="receiver_in_canal_treatment_in_hyderabad.php">Receiver In Canal (RIC)</a></li>
-            <li><a class="s-item speech" href="Completely_in_canal_treatment_in_hyderabad.php">Completely In Canal (CIC)</a></li>
-            <li><a class="s-item speech" href="in_the_canal_treatment_in_hyderabad.php">In-The-Canal (ITC) (Instant Fit)</a></li>
-            <li><a class="s-item speech" href="invisible_in_the_canal_treatment_in_hyderabad.php">Invisible-In-The-Canal (IIC)</a></li>
-            <li><a class="s-item speech" href="rechargeable_bte_treatment_in_hyderabad.php">Rechargeable BTE</a></li>
-            <li><a class="s-item speech" href="rechargeable_ric_treatment_in_hyderabad.php">Rechargeable RIC</a></li>
-            <li><a class="s-item speech" href="rechargeable_itc_treatment_in_hyderabad.php">Rechargeable ITC</a></li>
-            <li><a class="s-item speech" href="rechargeable_cic_treatment_in_hyderabad.php">Rechargeable CIC</a></li>
-            <li><a class="s-item speech" href="ear_moulds_ear_plugs_treatment_in_hyderabad.php">Ear Moulds/Ear Plugs</a></li>
-            <li><a class="s-item speech" href="hearing_aid_accesssories_treatment_in_hyderabad.php">Hearing Aid Accesssories</a></li>
-            <li><a class="s-item speech" href="hearing_aid_batteries_treatment_in_hyderabad.php">Hearing aid batteries</a></li>
-            <li><a class="s-item speech" href="hearing_aid_services_repair_treatment_in_hyderabad.php">Hearing aid services & repair</a></li>
+            <li><a class="s-item hearing" href="behind_the_ear_treatment_in_hyderabad.php">Behind The Ear (BTE)</a></li>
+            <li><a class="s-item hearing" href="receiver_in_canal_treatment_in_hyderabad.php">Receiver In Canal (RIC)</a></li>
+            <li><a class="s-item hearing" href="Completely_in_canal_treatment_in_hyderabad.php">Completely In Canal (CIC)</a></li>
+            <li><a class="s-item hearing" href="in_the_canal_treatment_in_hyderabad.php">In-The-Canal (ITC) (Instant Fit)</a></li>
+            <li><a class="s-item hearing" href="invisible_in_the_canal_treatment_in_hyderabad.php">Invisible-In-The-Canal (IIC)</a></li>
+            <li><a class="s-item hearing" href="rechargeable_bte_treatment_in_hyderabad.php">Rechargeable BTE</a></li>
+            <li><a class="s-item hearing" href="rechargeable_ric_treatment_in_hyderabad.php">Rechargeable RIC</a></li>
+            <li><a class="s-item hearing" href="rechargeable_itc_treatment_in_hyderabad.php">Rechargeable ITC</a></li>
+            <li><a class="s-item hearing" href="rechargeable_cic_treatment_in_hyderabad.php">Rechargeable CIC</a></li>
+            <li><a class="s-item hearing" href="ear_moulds_ear_plugs_treatment_in_hyderabad.php">Ear Moulds/Ear Plugs</a></li>
+            <li><a class="s-item hearing" href="hearing_aid_accesssories_treatment_in_hyderabad.php">Hearing Aid Accesssories</a></li>
+            <li><a class="s-item hearing" href="hearing_aid_batteries_treatment_in_hyderabad.php">Hearing aid batteries</a></li>
+            <li><a class="s-item hearing" href="hearing_aid_services_repair_treatment_in_hyderabad.php">Hearing aid services & repair</a></li>
 
         </ul>
     </div>

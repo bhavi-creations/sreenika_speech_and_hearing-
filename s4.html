@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sreenika Hearing and Speech</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --shs-primary: #427ddd;
+            --shs-primary-light: rgba(66, 125, 221, 0.1);
+            --shs-primary-lighter: rgba(66, 125, 221, 0.05);
+            --shs-border: rgba(66, 125, 221, 0.3);
+            --shs-dark: #2c3e50;
+            --shs-light: #6c757d;
+            --shs-white: #ffffff;
+        }
+        
+        .shs-about-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #f0f4f8 100%);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .shs-about-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--shs-border) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: shs-float 8s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        .shs-about-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--shs-border) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: shs-float 10s ease-in-out infinite reverse;
+            pointer-events: none;
+        }
+        
+        @keyframes shs-float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -30px) scale(1.1); }
+        }
+        
+        .shs-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--shs-primary);
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 30px var(--shs-border);
+        }
+        
+        .shs-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--shs-light);
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 2;
+            font-weight: 300;
+        }
+        
+        .shs-main-card {
+            background: linear-gradient(135deg, var(--shs-primary-lighter), rgba(255, 255, 255, 0.95));
+            border: 2px solid var(--shs-border);
+            border-radius: 30px;
+            padding: 60px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 20px 60px rgba(66, 125, 221, 0.15);
+            transition: all 0.4s ease;
+        }
+        
+        .shs-main-card:hover {
+            border-color: var(--shs-primary);
+            box-shadow: 0 25px 70px rgba(66, 125, 221, 0.25);
+        }
+        
+        .shs-intro {
+            font-size: 1.3rem;
+            line-height: 2;
+            color: var(--shs-dark);
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 400;
+        }
+        
+        .shs-intro strong {
+            color: var(--shs-primary);
+            font-weight: 600;
+        }
+        
+        .shs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .shs-feature-card {
+            background: #ffffff;
+            border: 1px solid var(--shs-border);
+            border-radius: 20px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        
+        .shs-feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--shs-primary);
+            box-shadow: 0 15px 40px rgba(66, 125, 221, 0.2);
+        }
+        
+        .shs-icon {
+            font-size: 3rem;
+            color: var(--shs-primary);
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .shs-feature-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--shs-primary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .shs-services-wrapper {
+            background: linear-gradient(135deg, var(--shs-primary-light), rgba(255, 255, 255, 0.9));
+            border: 2px solid var(--shs-primary);
+            border-radius: 25px;
+            padding: 45px;
+            margin: 50px 0;
+        }
+        
+        .shs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .shs-list li {
+            background: #ffffff;
+            border-left: 4px solid var(--shs-primary);
+            padding: 18px 25px;
+            border-radius: 8px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .shs-list li:hover {
+            transform: translateX(8px);
+            background: var(--shs-primary-lighter);
+        }
+
+        .shs-list i {
+            color: var(--shs-primary);
+            margin-right: 15px;
+        }
+        
+        .shs-values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .shs-value-item {
+            background: #ffffff;
+            border: 1px solid var(--shs-border);
+            border-radius: 15px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+        
+        .shs-value-item:hover {
+            background: var(--shs-primary-lighter);
+            transform: scale(1.03);
+        }
+        
+        .shs-footer-quote {
+            background: linear-gradient(135deg, var(--shs-primary), #3567c7);
+            color: #ffffff;
+            padding: 50px;
+            border-radius: 25px;
+            text-align: center;
+            margin-top: 60px;
+            box-shadow: 0 15px 50px rgba(66, 125, 221, 0.3);
+        }
+        
+        .shs-footer-quote p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .shs-title { font-size: 2.5rem; }
+            .shs-main-card { padding: 30px 20px; }
+            .shs-footer-quote p { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="shs-about-section">
+        <div class="container">
+            
+            <h2 class="shs-title">About Us</h2>
+            <p class="shs-subtitle">Your Partner in Communication Excellence</p>
+            
+            <div class="shs-main-card">
+                <p class="shs-intro">
+                    <strong>Sreenika Hearing and Speech</strong> is dedicated to helping individuals communicate with confidence and live life to the fullest. We provide comprehensive hearing and speech care using a compassionate, patient-centered approach.
+                </p>
+                
+                <div class="shs-grid">
+                    <div class="shs-feature-card">
+                        <i class="fas fa-user-md shs-icon"></i>
+                        <h3 class="shs-feature-title">Expert Team</h3>
+                        <p class="text-muted small">Qualified and experienced Audiologists and Speech-Language Pathologists dedicated to your care.</p>
+                    </div>
+                    
+                    <div class="shs-feature-card">
+                        <i class="fas fa-users shs-icon"></i>
+                        <h3 class="shs-feature-title">All Ages Welcome</h3>
+                        <p class="text-muted small">Comprehensive care for both children and adults with personalized treatment plans.</p>
+                    </div>
+                    
+                    <div class="shs-feature-card">
+                        <i class="fas fa-microscope shs-icon"></i>
+                        <h3 class="shs-feature-title">Advanced Technology</h3>
+                        <p class="text-muted small">State-of-the-art diagnostic equipment and modern hearing aid solutions.</p>
+                    </div>
+                    
+                    <div class="shs-feature-card">
+                        <i class="fas fa-clipboard-check shs-icon"></i>
+                        <h3 class="shs-feature-title">Evidence-Based Care</h3>
+                        <p class="text-muted small">Therapy techniques grounded in research ensuring effective treatment outcomes.</p>
+                    </div>
+                </div>
+                
+                <div class="shs-services-wrapper">
+                    <h3 class="text-center mb-4 shs-feature-title" style="font-size: 2rem;">Conditions We Address</h3>
+                    <ul class="shs-list">
+                        <li><i class="fas fa-volume-up"></i> Hearing Loss</li>
+                        <li><i class="fas fa-child"></i> Speech Delay</li>
+                        <li><i class="fas fa-comments"></i> Language Disorders</li>
+                        <li><i class="fas fa-microphone"></i> Stammering/Stuttering</li>
+                        <li><i class="fas fa-volume-down"></i> Voice Problems</li>
+                        <li><i class="fas fa-handshake"></i> Communication Difficulties</li>
+                    </ul>
+                </div>
+                
+                <div class="shs-values-wrapper mt-5">
+                    <h3 class="text-center shs-feature-title" style="font-size: 2.2rem;">What Drives Our Care</h3>
+                    <div class="shs-values-grid">
+                        <div class="shs-value-item">
+                            <i class="fas fa-heart shs-icon" style="font-size: 2rem;"></i>
+                            <h4 class="h5 fw-bold">Compassionate Approach</h4>
+                            <p class="text-muted small">We understand that communication challenges affect every aspect of life. Our team provides care with empathy.</p>
+                        </div>
+                        <div class="shs-value-item">
+                            <i class="fas fa-user-check shs-icon" style="font-size: 2rem;"></i>
+                            <h4 class="h5 fw-bold">Personalized Plans</h4>
+                            <p class="text-muted small">Every individual is unique. We create customized assessment and therapy plans tailored to you.</p>
+                        </div>
+                        <div class="shs-value-item">
+                            <i class="fas fa-trophy shs-icon" style="font-size: 2rem;"></i>
+                            <h4 class="h5 fw-bold">Long-Term Results</h4>
+                            <p class="text-muted small">Our goal extends beyond treatment—we focus on lasting improvement in communication skills.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shs-footer-quote">
+                    <i class="fas fa-quote-left mb-3" style="font-size: 2rem; opacity: 0.6;"></i>
+                    <p>At Sreenika Hearing and Speech, we walk alongside you on your journey toward better hearing, clearer speech, and stronger communication.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
