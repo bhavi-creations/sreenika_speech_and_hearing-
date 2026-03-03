@@ -17,8 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="./assets/img/new_2.png" type="image/x-icon">
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -26,7 +29,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./assets/img/logo_2.png" alt="Sreenika Logo" style="width: 200px; height: auto;">
+                <img src="./assets/img/new_2.png" alt="Sreenika Logo" style="width: 230px; height: auto;">
                 <!-- <img src="logo_1.png" alt="Sreenika Logo"> -->
             </a>
 
@@ -116,8 +119,16 @@
                     <!-- <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link" href="">Testimonials</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-                    <li class="nav-item apppointment_button"><a class="nav-link" href="appointment.php">Appointment</a></li>
+                    <li class="nav-item "><a class="nav-link appointment_section" href="appointment.php">Appointment</a></li>
 
+
+                   
+
+                    <li class="nav-item">
+                        <a class="nav-link new_slider_section_call_btn" href="tel:+9172071 09262">
+                            <i class="bi bi-telephone-fill"></i> <span>+91 72071 09262</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -12,7 +12,7 @@
                 <div class="col-lg-8 col-md-7">
                     <div>
                         <div class="ul-service-details-img d-flex justify-content-center">
-                            <img src="./assets/img/service/Speech assesment 2.png alt="Image" class="img-fluid" style="width: 600px;">
+                            <img src="./assets/img/service/Speech assesment 2.png" alt="Image" class="img-fluid" style="width: 600px;">
                         </div>
                         <div class="ul-service-details-txt">
                             <h2 class="ul-service-details-title">Speech Assessment</h2>
@@ -95,7 +95,7 @@
                         <div class="ul-service-details-sidebar-cta-content">
                             <p class="contact-info"> F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049</p>
                             <span class="contact-info number"><a href="tel:+1890123456">+91 93921 89262</a></span>
-                            <p class="contact-info"><a href="drsunil19@yahoo.com">srinika@gmail.com</a></p>
+                            <p class="contact-info"><a href="infosreenika@gmail.com">infosreenika@gmail.com</a></p>
                             <a href="contact.php" class="ul-btn">Contact Us <i class="flaticon-arrow-up-right"></i></a>
                         </div>
                     </div>

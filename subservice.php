@@ -106,7 +106,7 @@
         <hr class="my-3 opacity-10">
 
         <ul class="ul-service-details-sidebar-links" id="sidebar-service-list">
-            <li><a class="dropdown-item" href="#">Pure Tone Audiometry</a></li>
+            <!-- <li><a class="dropdown-item" href="#">Pure Tone Audiometry</a></li> -->
             <!-- <li class="s-item audiology"><a href="#">Pure Tone Audiometry </a></li>
             <li class="s-item audiology"><a href="#">Impedance Audiometry </a></li>
             <li class="s-item audiology"><a href="#">BERA / OAE Test </a></li>

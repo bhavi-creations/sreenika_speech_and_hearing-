@@ -27,7 +27,7 @@
                             <div class="info-box mt-4">
                                 <i class="bx bx-envelope"></i>
                                 <h3>Email Us</h3>
-                                <p>sreenikaspeechand@gmail.com</p>
+                                <p>infosreenika@gmail.com</p>
                             </div>
                         </div>
 

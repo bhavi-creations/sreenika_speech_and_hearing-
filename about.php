@@ -69,10 +69,10 @@
                         intervention and personalized rehabilitation.
                     </p>
 
-                    <a href="about.php" class="read-more-btn">
+                    <!-- <a href="about.php" class="read-more-btn">
                         Read More
                         <i class="bi bi-arrow-right"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
 

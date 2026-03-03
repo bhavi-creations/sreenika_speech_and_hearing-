@@ -4,10 +4,10 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="rjy-footer-widget">
-                    <h4>Sreenika speech and hearing</h4>
+                    <h4>Sreenika speech and hearing Clinic</h4>
                     <p class="rjy-footer-desc ">
                         <a class="navbar-brand" href="#">
-                            <img src="./assets/img/logo_2.png" alt="Sreenika Logo" style="width: 200px; height: auto;">
+                            <img src="./assets/img/new_3.png" alt="Sreenika Logo " class="img-fluid" style="width:340px; height: auto;">
                             <!-- <img src="logo_1.png" alt="Sreenika Logo"> -->
                         </a>
                     </p>
@@ -51,19 +51,25 @@
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="rjy-footer-widget">
-                    <h4>Details</h4>
+                    <h4>Get in Touch</h4>
                     <p class="rjy-footer-desc">
-                       F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049
+                        F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049
                     </p>
                     <div class="mb-3">
                         <div class="rjy-contact-data">
                             <h5>Phone Number</h5>
-                            <p>+91 96522 39999</p>
+                            <p>+91 72071 09262</p>
                         </div>
                     </div>
-                    <!-- <div class="rjy-submit-btn" style="padding: 12px 30px;">
+                    <div class="rjy-submit-btn" style="padding: 12px 30px;" href="mailto:infosreenika@gmail.com">
+                        infosreenika@gmail.com
+                    </div>
 
-                    </div> -->
+                    <!-- <a href="mailto:infosreenika@gmail.com"
+                        class="rjy-submit-btn"
+                        style="padding: 12px 30px; display:inline-block; text-decoration:none;">
+                        infosreenika@gmail.com
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -110,8 +116,33 @@
 </script>
 
 
+<!-- whats app  -->
+<a href="https://api.whatsapp.com/send?phone=917207109262" style="color: #fff;" class="whatsapp-link"
+    target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
 
+<!-- call  icon  -->
+<a href="tel:+917207109262" style="color: #fff;" class="call_link  "
+    target="_blank">
+    <img src="./assets/img/Call.png" alt="" style="width:50px;  height:50px;" ;>
+</a>
+
+
+
+<!-- social media icons   -->
+<div class="social-icons text-center">
+    <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/</a>" target="_blank">
+        <img src="./assets/img/facebook.png" class="img-fluid" alt="" /></a>
+    <a href="https://www.instagram.com/sreenikashrcenter/?igshid=YTQwZjQ0NmI0OA%3D%3D" target="_blank">
+        <img src="./assets/img/instagram.png" class="img-fluid" alt="" /></a>
+    <a
+        href="https://www.youtube.com/channel/UCnu0TOuz35XAg2cLUQ82vBA " target="_blank">
+        <img src="./assets/img/youtube.png" class="img-fluid" style="border-radius: 5px" alt="" /></a>
+    <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGf2vQQmL7DggAAAZOb8_Ig1psDzUY6Ex_ftJ4pZkD1aIFj3kdOHryXuY7GfodYvgBWmiQoF_cxvqXTNeJnp2AWonOU5Y8S1tESajEAnjGx-IOYl90YsDASyxljsxPa-fknkKM=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsreenika-speech-and-hearing-rehabilitation-center-b44525297%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app " target="_blank">
+        <img src="./assets/img/linkedin.png" class="img-fluid" alt="" /></a>
+</div>
 
 <!-- 3 image slide script -->
 <script>

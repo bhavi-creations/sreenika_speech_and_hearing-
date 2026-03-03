@@ -34,7 +34,7 @@ $result = $stmt->get_result();
 <?php include 'header.php'; ?>
 
 
-<main>
+<main class="main_blogs_content">
   <!-- Filter Buttons -->
   <!-- <div class="container">
     <div class="filter_buttons redirect_section mt-4">

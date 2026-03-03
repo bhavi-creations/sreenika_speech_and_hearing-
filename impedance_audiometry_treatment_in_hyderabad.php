@@ -91,7 +91,7 @@
                         <div class="ul-service-details-sidebar-cta-content">
                             <p class="contact-info"> F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049</p>
                             <span class="contact-info number"><a href="tel:+1890123456">+91 93921 89262</a></span>
-                            <p class="contact-info"><a href="drsunil19@yahoo.com">srinika@gmail.com</a></p>
+                            <p class="contact-info"><a href="infosreenika@gmail.com">infosreenika@gmail.com</a></p>
                             <a href="contact.php" class="ul-btn">Contact Us <i class="flaticon-arrow-up-right"></i></a>
                         </div>
                     </div>
