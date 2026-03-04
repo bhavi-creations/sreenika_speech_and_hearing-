@@ -55,14 +55,16 @@
                     <p class="rjy-footer-desc">
                         F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049
                     </p>
-                    <div class="mb-3">
+                    <div class="mb-3 d-flex ">
+                        <i class="bi bi-telephone-fill"></i>
                         <div class="rjy-contact-data">
+
                             <h5>Phone Number</h5>
                             <p>+91 72071 09262</p>
                         </div>
                     </div>
                     <div class="rjy-submit-btn" style="padding: 12px 30px;" href="mailto:infosreenika@gmail.com">
-                        infosreenika@gmail.com
+                        <i class="bi bi-envelope-fill"></i> &nbsp; infosreenika@gmail.com
                     </div>
 
                     <!-- <a href="mailto:infosreenika@gmail.com"

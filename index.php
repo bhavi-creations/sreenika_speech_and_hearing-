@@ -1129,7 +1129,7 @@
         <div class="mb-5 reveal text-center">
             <div class="section-tag">Get in Touch</div>
             <h2 class="display-5 fw-bold" style="color: #002244;">Contact Us Today</h2>
-            <p class="rjy-slider-desc">Let's discuss your steel requirements</p>
+            <!-- <p class="rjy-slider-desc">Let's discuss your steel requirements</p> -->
 
             <!-- <h2 class="display-5 fw-bold" style="color: #002244;">
                     What Our Clients Say
