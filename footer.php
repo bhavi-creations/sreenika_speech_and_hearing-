@@ -60,7 +60,7 @@
                         <div class="rjy-contact-data">
 
                             <h5>Phone Number</h5>
-                            <p>+91 72071 09262</p>
+                            <p> +91 9392189262</p>
                         </div>
                     </div>
                     <div class="rjy-submit-btn" style="padding: 12px 30px;" href="mailto:infosreenika@gmail.com">
