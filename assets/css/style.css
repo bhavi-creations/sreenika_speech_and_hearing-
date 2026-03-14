@@ -15,7 +15,7 @@ body {
     background: #ffffff;
     /* background: #0a0e27; */
     min-height: 100vh;
-    background-color: rgba(0, 204, 255, 0.174);
+    /* background-color: rgba(0, 204, 255, 0.174); */
 }
 
 a {
@@ -711,7 +711,7 @@ a {
 /* ==================== GALLERY SECTION ==================== */
 .rjy-gallery-zone {
     padding: 80px 0;
-    background: rgba(103, 217, 238, 0.2);
+    /* background: rgba(103, 217, 238, 0.2); */
     /* background: rgba(0, 0, 0, 0.2); */
 }
 
@@ -801,7 +801,8 @@ a {
 }
 
 .rjy-testimonial-box {
-    background: rgba(171, 211, 247, 0.48);
+    background: rgb(255, 255, 255);
+    /* background: rgba(171, 211, 247, 0.48); */
     /* background: rgba(26, 35, 50, 0.8); */
     backdrop-filter: blur(20px);
     border: 1px solid rgba(14, 165, 233, 0.2);
@@ -877,7 +878,8 @@ a {
 /* ==================== CONTACT SECTION ==================== */
 .rjy-contact-realm {
     padding: 80px 0;
-    background-color: rgba(103, 217, 238, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(103, 217, 238, 0.2); */
     /* background: rgba(165, 228, 237, 0.2); */
     /* 165 228 237 0.2 */
 }
@@ -1609,15 +1611,15 @@ a {
 /* contact stylings   */
 .contact-section {
     padding: 60px 0;
-    /* background: #f8f9fa; */
-    background-color: #bad8e6;
+    background: #f8f9fa;
+    /* background-color: #bad8e6; */
     font-family: 'Mulish', sans-serif;
 }
 
 .info-box {
     /* background: #87CEEB; */
-background-color: #2078ac;
-    /* background: rgba(0, 34, 68, 0.9); */
+/* background-color: #2078ac; */
+    background: rgba(0, 34, 68, 0.9);
     /* background: #ffffff; */
     padding: 30px;
     border-radius: 10px;
@@ -1903,8 +1905,9 @@ background-color: #2078ac;
 }
 
 .shs-main-card {
-    /* background:  rgb(190, 227, 240);#87CEEB */
-    background: rgba(148, 190, 203, 0.3);
+    background:  rgba(190, 227, 240, 0.825);
+    /* background:  rgb(190, 227, 240); */
+    /* background: rgba(148, 190, 203, 0.3); */
     border: 2px solid var(--shs-border);
     border-radius: 30px;
     padding: 60px;
@@ -1941,8 +1944,8 @@ background-color: #2078ac;
 }
 
 .shs-feature-card {
-    background: rgba(171, 211, 247, 0.48);
-    /* background: #e1dcdc; */
+    background: rgba(255, 255, 255, 0.989);
+    /* background:#87CEEB; */
     border: 1px solid var(--shs-border);
     border-radius: 20px;
     padding: 35px 25px;
@@ -2055,7 +2058,7 @@ background-color: #2078ac;
 }
 
 .shs-footer-quote {
-    background: lightblue;
+    background: rgb(255, 255, 255);
     /* background: linear-gradient(135deg, var(--shs-primary), #3567c7); */
     color: #000000;
     /* color: #ffffff; */
@@ -2154,7 +2157,7 @@ background-color: #2078ac;
 
 
 
-.service_section_audio {
+/* .service_section_audio {
     background-color: rgba(0, 204, 255, 0.174);
 }
 
@@ -2164,7 +2167,7 @@ background-color: #2078ac;
 
 .service_section_hearing {
     background-color: rgba(88, 203, 238, 0.311);
-}
+} */
 
 
 
@@ -2189,7 +2192,7 @@ background-color: #2078ac;
 .new_slider_section_card {
     cursor: pointer;
     transition: all 0.4s ease;
-    border: 2px solid transparent;
+    border: 2px solid #87CEEB;
     border-radius: 12px;
     background: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -2221,10 +2224,10 @@ background-color: #2078ac;
 
 .new_slider_section_sub_card {
     /* background:#37b8df; */
-    background-color: #d1f2fff2;
-    /* background: #fff; */
+    /* background-color: #d1f2fff2; */
+    background: #fff;
     border-radius: 10px;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     width: 100%;
     text-align: center;
     border: 1px solid #eee;
@@ -2308,7 +2311,8 @@ background-color: #2078ac;
 /* count stylings  */
 /* Styling for Achievement Section */
     .sreenika_count_section {
-        background-color: #92cadd;
+        /* background-color: #92cadd; */
+        background-color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 

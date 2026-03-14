@@ -2,7 +2,9 @@
 
 <section id="audio_section" class="service_section_audio py-5">
     <div class="container my-5">
-        <h1 class="d-flex justify-content-center my-5 ">  <div class="section-tag-section">Audiology Services</div></h1>
+        <h1 class="d-flex justify-content-center my-5 ">
+            <div class="section-tag-section">Audiology Services</div>
+        </h1>
         <div class="row">
             <div class="col-md-4 mt-5">
                 <a href="pure_tone_audiometry_treatment_in_hyderabad.php">
@@ -164,7 +166,9 @@
 
 
     <div class="container my-5">
-        <h1 class="d-flex justify-content-center my-5"> <div class="section-tag-section">Speech Services</div></h1>
+        <h1 class="d-flex justify-content-center my-5">
+            <div class="section-tag-section">Speech Services</div>
+        </h1>
         <div class="row">
             <div class="col-md-4 mt-5">
                 <a href="speech_assessment_treatment_in_hyderabad.php">
@@ -370,8 +374,82 @@
 
 
 <section id="hearing_service" class="service_section_hearing py-5">
+
+
+
+
+
+
+
     <div class="container my-5">
-        <h1 class="d-flex justify-content-center my-5">  <div class="section-tag-section">Hearing Services</div></h1>
+        <h1 class="d-flex justify-content-center my-5">
+            <div class="section-tag-section">Hearing Services</div>
+        </h1>
+
+
+
+        <div class="container">
+
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Hearing Services -->
+
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/audicus_8.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/audien_9.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/eargo_2.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/jabra_7.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                    <!-- Speech Services -->
+
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img//lexie_3.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                  
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/md_1.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                    <!-- Audiology Services -->
+
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/oticon_4.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/signia_6.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/starkey_5.png" alt="" class="img-fluid"></div>
+                    </div>
+
+                    <!-- <div class="swiper-slide">
+                        <div class=""><img src="./assets/img/service/behind_the_ear_1.png" alt="" class="img-fluid"></div>
+                    </div> -->
+
+                </div>
+
+                <!-- <div class="swiper-pagination mt-4"></div> -->
+
+            </div>
+
+        </div>
+
         <div class="row">
             <div class="col-md-4 mt-5">
                 <a href="behind_the_ear_treatment_in_hyderabad.php">
@@ -572,5 +650,39 @@
     </div>
 
 </section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+
+        breakpoints: {
+
+            768: {
+                slidesPerView: 2
+            },
+
+            1024: {
+                slidesPerView: 3
+            }
+
+        }
+
+    });
+</script>
 
 <?php include 'footer.php'; ?>

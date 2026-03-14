@@ -37,8 +37,8 @@
 
 /* Service Details Text */
 .ul-service-details-txt {
-    background: #d8ebea !important;
-    /* background: white; */
+    /* background: #d8ebea !important; */
+    background: white !important;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -198,12 +198,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background:#d8ebea;
-    /* background: rgba(0, 34, 68, 0.9); */
+    /* background:#d8ebea; */
+    background: rgba(0, 34, 68, 0.9);
     border-radius: 10px;
     /* color: #2c3e50; */
-    color: rgb(0, 0, 0);
-    /* color: white; */
+    /* color: rgb(0, 0, 0); */
+    color: white;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -232,19 +232,19 @@
 /* CTA Card */
 .ul-service-details-sidebar-cta {
     /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; */
-    /* background-color: rgba(0, 34, 68, 0.9); */
-    background-color: #d8ebea;
-    color: rgb(0, 0, 0);
+    background-color: rgba(0, 34, 68, 0.9);
+    /* background-color: #d8ebea; */
+    color: rgb(255, 255, 255);
 }
 
 .ul-service-details-sidebar-cta .ul-service-details-sidebar-widget-title {
-    color: rgb(0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
     /* border-bottom-color: rgba(255, 255, 255, 0.3); */
 }
 
 .ul-service-details-sidebar-cta-content .contact-info {
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     /* color: rgba(255, 255, 255, 0.9); */
     font-size: 1rem;
     line-height: 1.6;
@@ -258,7 +258,7 @@
 }
 
 .ul-service-details-sidebar-cta-content .contact-info a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: all 0.3s ease;
 }

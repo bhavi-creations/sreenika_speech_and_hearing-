@@ -4,10 +4,10 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="rjy-footer-widget">
-                    <h4>Sreenika speech and hearing Clinic</h4>
+                    <h4>Sreenika speech and hearing Center</h4>
                     <p class="rjy-footer-desc ">
                         <a class="navbar-brand" href="#">
-                            <img src="./assets/img/new_3.png" alt="Sreenika Logo " class="img-fluid" style="width:340px; height: auto;">
+                            <img src="./assets/img/logo_1.png" alt="Sreenika Logo " class="img-fluid" style="width:340px; height: auto;">
                             <!-- <img src="logo_1.png" alt="Sreenika Logo"> -->
                         </a>
                     </p>
@@ -56,7 +56,7 @@
                         F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049
                     </p>
                     <div class="mb-3 d-flex ">
-                        <i class="bi bi-telephone-fill"></i>
+                        <!-- <i class="bi bi-telephone-fill"></i> -->
                         <div class="rjy-contact-data">
 
                             <h5>Phone Number</h5>

@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./assets/img/new_2.png" alt="Sreenika Logo" style="width: 230px; height: auto;">
+                <img src="./assets/img/logo_1.png" alt="Sreenika Logo" style="width: 230px; height: auto;">
                 <!-- <img src="logo_1.png" alt="Sreenika Logo"> -->
             </a>
 
@@ -125,8 +125,8 @@
                    
 
                     <li class="nav-item">
-                        <a class="nav-link new_slider_section_call_btn" href="tel:+9172071 09262">
-                            <i class="bi bi-telephone-fill"></i> <span>+91 72071 09262</span>
+                        <a class="nav-link new_slider_section_call_btn" href="tel:+919392189262">
+                            <i class="bi bi-telephone-fill"></i> <span>+91 9392189262</span>
                         </a>
                     </li>
                 </ul>
