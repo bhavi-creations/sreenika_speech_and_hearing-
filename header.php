@@ -26,7 +26,7 @@
 
 <body>
 
-    <div class="index_first_navbar_wrapper  text-white py-2 border-bottom" style="background-color: #2c3e50;">
+    <div class="d-none d-xl-block  index_first_navbar_wrapper  text-white py-2 border-bottom" style="background-color: #2c3e50;">
         <div class="container">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
 
