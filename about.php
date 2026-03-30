@@ -6,7 +6,7 @@
         <div class="row align-items-center">
 
             <!-- Left Column - Stats -->
-            <div class="col-lg-2 col-md-12 order-lg-1 order-2 d-none d-md-block">
+            <!-- <div class="col-lg-2 col-md-12 order-lg-1 order-2 d-none d-md-block">
                 <div class="stats-column">
                     <div class="stat-item fade-in-up">
                         <div class="stat-number" data-target="10000">0+</div>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
             <!-- Middle Column - Image -->
             <div class="col-lg-5 col-md-12 order-lg-2 order-1">
@@ -52,7 +52,7 @@
             </div>
 
             <!-- Right Column - Content -->
-            <div class="col-lg-5 col-md-12 order-lg-3 order-3">
+            <div class="col-lg-7 col-md-12 order-lg-3 order-3">
                 <div class="content-column">
                     <div class="section-tag">ABOUT US</div>
                     <!-- <span class="section-label fade-in-up delay-2">About Us</span> -->

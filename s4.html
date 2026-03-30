@@ -1,319 +1,598 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Sreenika Hearing and Speech</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --shs-primary: #427ddd;
-            --shs-primary-light: rgba(66, 125, 221, 0.1);
-            --shs-primary-lighter: rgba(66, 125, 221, 0.05);
-            --shs-border: rgba(66, 125, 221, 0.3);
-            --shs-dark: #2c3e50;
-            --shs-light: #6c757d;
-            --shs-white: #ffffff;
-        }
-        
-        .shs-about-section {
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #f0f4f8 100%);
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        .shs-about-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, var(--shs-border) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: shs-float 8s ease-in-out infinite;
-            pointer-events: none;
-        }
-        
-        .shs-about-section::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, var(--shs-border) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: shs-float 10s ease-in-out infinite reverse;
-            pointer-events: none;
-        }
-        
-        @keyframes shs-float {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(30px, -30px) scale(1.1); }
-        }
-        
-        .shs-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: var(--shs-primary);
-            text-align: center;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 2;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 0 0 30px var(--shs-border);
-        }
-        
-        .shs-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: var(--shs-light);
-            margin-bottom: 60px;
-            position: relative;
-            z-index: 2;
-            font-weight: 300;
-        }
-        
-        .shs-main-card {
-            background: linear-gradient(135deg, var(--shs-primary-lighter), rgba(255, 255, 255, 0.95));
-            border: 2px solid var(--shs-border);
-            border-radius: 30px;
-            padding: 60px;
-            position: relative;
-            z-index: 2;
-            box-shadow: 0 20px 60px rgba(66, 125, 221, 0.15);
-            transition: all 0.4s ease;
-        }
-        
-        .shs-main-card:hover {
-            border-color: var(--shs-primary);
-            box-shadow: 0 25px 70px rgba(66, 125, 221, 0.25);
-        }
-        
-        .shs-intro {
-            font-size: 1.3rem;
-            line-height: 2;
-            color: var(--shs-dark);
-            margin-bottom: 40px;
-            text-align: center;
-            font-weight: 400;
-        }
-        
-        .shs-intro strong {
-            color: var(--shs-primary);
-            font-weight: 600;
-        }
-        
-        .shs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-        
-        .shs-feature-card {
-            background: #ffffff;
-            border: 1px solid var(--shs-border);
-            border-radius: 20px;
-            padding: 35px 25px;
-            text-align: center;
-            transition: all 0.4s ease;
-        }
-        
-        .shs-feature-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--shs-primary);
-            box-shadow: 0 15px 40px rgba(66, 125, 221, 0.2);
-        }
-        
-        .shs-icon {
-            font-size: 3rem;
-            color: var(--shs-primary);
-            margin-bottom: 20px;
-            display: block;
-        }
-        
-        .shs-feature-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            color: var(--shs-primary);
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .shs-services-wrapper {
-            background: linear-gradient(135deg, var(--shs-primary-light), rgba(255, 255, 255, 0.9));
-            border: 2px solid var(--shs-primary);
-            border-radius: 25px;
-            padding: 45px;
-            margin: 50px 0;
-        }
-        
-        .shs-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            list-style: none;
-            padding: 0;
-        }
-        
-        .shs-list li {
-            background: #ffffff;
-            border-left: 4px solid var(--shs-primary);
-            padding: 18px 25px;
-            border-radius: 8px;
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-        
-        .shs-list li:hover {
-            transform: translateX(8px);
-            background: var(--shs-primary-lighter);
-        }
+<!-- service section  -->
+<div class="container pt-5">
+    <!-- <p class="new_slider_section_tag">OUR SERVICES</p> -->
+    <h1 class="d-flex justify-content-center">
+        <div class="section-tag-section">OUR SERVICES</div>
+    </h1>
+    <!-- <div class="section-tag">ABOUT US</div> -->
+    <h2 class="new_slider_section_heading">Specialized Care Solutions </h2>
 
-        .shs-list i {
-            color: var(--shs-primary);
-            margin-right: 15px;
-        }
-        
-        .shs-values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-        
-        .shs-value-item {
-            background: #ffffff;
-            border: 1px solid var(--shs-border);
-            border-radius: 15px;
-            padding: 30px;
-            transition: 0.3s;
-        }
-        
-        .shs-value-item:hover {
-            background: var(--shs-primary-lighter);
-            transform: scale(1.03);
-        }
-        
-        .shs-footer-quote {
-            background: linear-gradient(135deg, var(--shs-primary), #3567c7);
-            color: #ffffff;
-            padding: 50px;
-            border-radius: 25px;
-            text-align: center;
-            margin-top: 60px;
-            box-shadow: 0 15px 50px rgba(66, 125, 221, 0.3);
-        }
-        
-        .shs-footer-quote p {
-            font-size: 1.5rem;
-            font-weight: 600;
-            font-family: 'Playfair Display', serif;
-            margin: 0;
-        }
-
-        @media (max-width: 768px) {
-            .shs-title { font-size: 2.5rem; }
-            .shs-main-card { padding: 30px 20px; }
-            .shs-footer-quote p { font-size: 1.2rem; }
-        }
-    </style>
-</head>
-<body>
-    
-    <section class="shs-about-section">
-        <div class="container">
-            
-            <h2 class="shs-title">About Us</h2>
-            <p class="shs-subtitle">Your Partner in Communication Excellence</p>
-            
-            <div class="shs-main-card">
-                <p class="shs-intro">
-                    <strong>Sreenika Hearing and Speech</strong> is dedicated to helping individuals communicate with confidence and live life to the fullest. We provide comprehensive hearing and speech care using a compassionate, patient-centered approach.
-                </p>
-                
-                <div class="shs-grid">
-                    <div class="shs-feature-card">
-                        <i class="fas fa-user-md shs-icon"></i>
-                        <h3 class="shs-feature-title">Expert Team</h3>
-                        <p class="text-muted small">Qualified and experienced Audiologists and Speech-Language Pathologists dedicated to your care.</p>
-                    </div>
-                    
-                    <div class="shs-feature-card">
-                        <i class="fas fa-users shs-icon"></i>
-                        <h3 class="shs-feature-title">All Ages Welcome</h3>
-                        <p class="text-muted small">Comprehensive care for both children and adults with personalized treatment plans.</p>
-                    </div>
-                    
-                    <div class="shs-feature-card">
-                        <i class="fas fa-microscope shs-icon"></i>
-                        <h3 class="shs-feature-title">Advanced Technology</h3>
-                        <p class="text-muted small">State-of-the-art diagnostic equipment and modern hearing aid solutions.</p>
-                    </div>
-                    
-                    <div class="shs-feature-card">
-                        <i class="fas fa-clipboard-check shs-icon"></i>
-                        <h3 class="shs-feature-title">Evidence-Based Care</h3>
-                        <p class="text-muted small">Therapy techniques grounded in research ensuring effective treatment outcomes.</p>
-                    </div>
-                </div>
-                
-                <div class="shs-services-wrapper">
-                    <h3 class="text-center mb-4 shs-feature-title" style="font-size: 2rem;">Conditions We Address</h3>
-                    <ul class="shs-list">
-                        <li><i class="fas fa-volume-up"></i> Hearing Loss</li>
-                        <li><i class="fas fa-child"></i> Speech Delay</li>
-                        <li><i class="fas fa-comments"></i> Language Disorders</li>
-                        <li><i class="fas fa-microphone"></i> Stammering/Stuttering</li>
-                        <li><i class="fas fa-volume-down"></i> Voice Problems</li>
-                        <li><i class="fas fa-handshake"></i> Communication Difficulties</li>
-                    </ul>
-                </div>
-                
-                <div class="shs-values-wrapper mt-5">
-                    <h3 class="text-center shs-feature-title" style="font-size: 2.2rem;">What Drives Our Care</h3>
-                    <div class="shs-values-grid">
-                        <div class="shs-value-item">
-                            <i class="fas fa-heart shs-icon" style="font-size: 2rem;"></i>
-                            <h4 class="h5 fw-bold">Compassionate Approach</h4>
-                            <p class="text-muted small">We understand that communication challenges affect every aspect of life. Our team provides care with empathy.</p>
-                        </div>
-                        <div class="shs-value-item">
-                            <i class="fas fa-user-check shs-icon" style="font-size: 2rem;"></i>
-                            <h4 class="h5 fw-bold">Personalized Plans</h4>
-                            <p class="text-muted small">Every individual is unique. We create customized assessment and therapy plans tailored to you.</p>
-                        </div>
-                        <div class="shs-value-item">
-                            <i class="fas fa-trophy shs-icon" style="font-size: 2rem;"></i>
-                            <h4 class="h5 fw-bold">Long-Term Results</h4>
-                            <p class="text-muted small">Our goal extends beyond treatment—we focus on lasting improvement in communication skills.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="shs-footer-quote">
-                    <i class="fas fa-quote-left mb-3" style="font-size: 2rem; opacity: 0.6;"></i>
-                    <p>At Sreenika Hearing and Speech, we walk alongside you on your journey toward better hearing, clearer speech, and stronger communication.</p>
-                </div>
+    <div class="row g-4 justify-content-center mb-5">
+        <div class="col-lg-4 col-md-6">
+            <div class="card p-3 new_slider_section_card new_slider_section_active_tab" id="tab-hearing" onclick="showSubServices('hearing')">
+                <h5 class="m-0">Hearing Services</h5>
             </div>
-            
         </div>
-    </section>
+        <div class="col-lg-4 col-md-6">
+            <div class="card p-3 new_slider_section_card" id="tab-speech" onclick="showSubServices('speech')">
+                <h5 class="m-0">Speech Services</h5>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card p-3 new_slider_section_card" id="tab-audiology" onclick="showSubServices('audiology')">
+                <h5 class="m-0">Audiology Services</h5>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <div class="position-relative">
+
+        <div id="hearing" class="new_slider_section_sub_wrapper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="behind_the_ear_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/behind_the_ear_1.png"
+                                        alt="Speech Therapy" class="img-fluid">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Behind The Ear (BTE)</h4>
+                                        <p class="text-muted">A discreet hearing aid worn behind the ear that amplifies sound to improve hearing and communication in daily life. </p>
+                                        <a href="behind_the_ear_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="receiver_in_canal_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/receiver_in_canal_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Receiver In Canal (RIC)</h4>
+                                        <p class="text-muted">A lightweight hearing aid with the receiver placed in the ear canal, delivering clear sound and comfortable, natural hearing.
+                                        </p>
+                                        <a href="receiver_in_canal_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="Completely_in_canal_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/completely_in_canal_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Completely In Canal (CIC)</h4>
+                                        <p class="text-muted">A discreet hearing aid placed entirely inside the ear canal, providing natural sound and improved hearing with minimal visibility. </p>
+                                        <a href="Completely_in_canal_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="in_the_canal_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/behind_the_ear_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">In-The-Canal (ITC) (Instant Fit)</h4>
+                                        <p class="text-muted">A custom-fit hearing aid that sits partly in the ear canal, offering clear sound, comfort, and quick, easy fitting.
+                                        </p>
+                                        <a href="in_the_canal_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="invisible_in_the_canal_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/Invisible-In-The-Canal-1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Invisible-In-The-Canal (IIC)</h4>
+                                        <p class="text-muted">A nearly invisible hearing aid placed deep in the ear canal, delivering natural sound discreetly for improved hearing.
+                                        </p>
+                                        <a href="invisible_in_the_canal_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="rechargeable_bte_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/rechargeable-bte-1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Rechargeable BTE</h4>
+                                        <p class="text-muted">A behind-the-ear hearing aid with built-in rechargeable battery, providing powerful sound and convenient all-day use.
+                                        </p>
+                                        <a href="rechargeable_bte_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a href="rechargeable_ric_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/rechargeable_ric-1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Rechargeable RIC</h4>
+                                        <p class="text-muted">A receiver-in-canal hearing aid with a rechargeable battery, offering clear sound and hassle-free all-day hearing.
+                                        </p>
+                                        <a href="rechargeable_ric_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="rechargeable_itc_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/Rechargeable-itc-1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Rechargeable ITC</h4>
+                                        <p class="text-muted">An in-the-canal hearing aid with a rechargeable battery, providing comfortable fit and reliable all-day hearing.
+                                        </p>
+                                        <a href="rechargeable_itc_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="rechargeable_cic_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/rechargeable_cic_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Rechargeable CIC</h4>
+                                        <p class="text-muted">A completely-in-canal hearing aid with a rechargeable battery, offering discreet, comfortable, and all-day reliable hearing.
+                                        </p>
+                                        <a href="rechargeable_cic_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="ear_moulds_ear_plugs_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/ear_molds.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Ear Moulds/Ear Plugs</h4>
+                                        <p class="text-muted">Custom-made ear moulds and ear plugs that provide comfortable fit, protect hearing, and enhance sound quality.
+                                        </p>
+                                        <a href="ear_moulds_ear_plugs_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="hearing_aid_accesssories_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/hearing_aid_accesssories.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Hearing Aid Accesssories</h4>
+                                        <p class="text-muted">A range of accessories designed to enhance hearing aid performance, comfort, and convenience for everyday use.
+                                        </p>
+                                        <a href="hearing_aid_accesssories_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="hearing_aid_batteries_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/Hearing aid batteries.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Hearing aid batteries</h4>
+                                        <p class="text-muted">Reliable batteries that power hearing aids for consistent, long-lasting performance and uninterrupted hearing.
+                                        </p>
+                                        <a href="hearing_aid_batteries_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="hearing_aid_services_repair_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/Hearing aid services & repair.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Hearing aid services & repair</h4>
+                                        <p class="text-muted">Professional services to maintain, repair, and optimize hearing aids for reliable performance and clear hearing.
+                                        </p>
+                                        <a href="hearing_aid_services_repair_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+
+
+        <div id="speech" class="new_slider_section_sub_wrapper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a href="speech_assessment_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/Speech assesment.png" alt="Speech Therapy"
+                                        class="img-fluid">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Speech Assessment</h4>
+                                        <p class="text-muted">A comprehensive evaluation that examines speech, language,
+                                            and communication skills to identify difficulties and plan appropriate
+                                            therapy.
+                                        </p>
+                                        <a href="speech_assessment_treatment_in_hyderabad.php" class="btn-link">Read
+                                            More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="speech_therapy_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/speech_therapy_2.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Speech Therapy</h4>
+                                        <p class="text-muted">A therapeutic intervention that improves speech clarity,
+                                            language skills, and effective communication across all age groups.
+                                        </p>
+                                        <a href="speech_therapy_treatment_in_hyderabad.php" class="btn-link">Read More
+                                            &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a
+                                href="occupational_therapy_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/ocuupational.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Occupational Therapy</h4>
+                                        <p class="text-muted">A therapeutic service that helps individuals develop,
+                                            improve, and maintain skills needed for daily activities and independent
+                                            living.
+                                        </p>
+                                        <a href="occupational_therapy_treatment_in_hyderabad.php" class="btn-link">Read
+                                            More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a href="aba_therapy_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/aba_1.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">ABA Therapy (Applied Behavior Analysis)</h4>
+                                        <p class="text-muted">A structured therapy that uses behavior-based techniques
+                                            to improve communication, learning, and positive behaviors in individuals.
+                                        </p>
+                                        <a href="aba_therapy_treatment_in_hyderabad.php" class="btn-link">Read More
+                                            &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a
+                                href="autism_adhd_therapy_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/autism.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Autism / ADHD Therapy</h4>
+                                        <p class="text-muted">A specialized intervention that supports attention,
+                                            behavior, communication, and social skills in individuals with Autism and
+                                            ADHD.
+                                        </p>
+                                        <a href="autism_adhd_therapy_treatment_in_hyderabad.php" class="btn-link">Read
+                                            More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a
+                                href="auditory_verhal_therapy_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/auditory_verhal_therapy_1.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Auditory Verhal Therapy (AVT)</h4>
+                                        <p class="text-muted">A listening-focused therapy that helps children with
+                                            hearing loss develop spoken language using hearing aids or cochlear
+                                            implants.
+                                        </p>
+                                        <a href="auditory_verhal_therapy_treatment_in_hyderabad.php"
+                                            class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a
+                                href="articulation_therapy_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/articulation_therapy_1.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Articulation Therapy</h4>
+                                        <p class="text-muted">A focused therapy that helps individuals correct speech
+                                            sound errors, enhancing clarity, pronunciation, and effective communication.
+                                        </p>
+                                        <a href="articulation_therapy_treatment_in_hyderabad.php" class="btn-link">Read
+                                            More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a
+                                href="stammering_stuttering_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/Sturring theraphy.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Stammering / Stuttering Therapy</h4>
+                                        <p class="text-muted">A specialized therapy that helps individuals manage
+                                            stammering, improve fluency, and communicate confidently in daily life.
+                                        </p>
+                                        <a href="stammering_stuttering_treatment_in_hyderabad.php" class="btn-link">Read
+                                            More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a href="voice_therapy_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/voice_therapy_1.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Voice Therapy</h4>
+                                        <p class="text-muted">A non-invasive therapy that improves voice quality, pitch,
+                                            and clarity to help individuals speak comfortably and confidently.
+                                        </p>
+                                        <a href="voice_therapy_treatment_in_hyderabad.php" class="btn-link">Read More
+                                            &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a href="special_education_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/special educations.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Special Education</h4>
+                                        <p class="text-muted">A tailored educational approach that supports children
+                                            with learning differences to develop skills, confidence, and academic
+                                            success.
+                                        </p>
+                                        <a href="special_education_treatment_in_hyderabad.php" class="btn-link">Read
+                                            More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a
+                                href="neuro_speech_disorders_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/articulation_therapy_1.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Neuro-Speech Disorders</h4>
+                                        <p class="text-muted">A specialized therapy that helps individuals with
+                                            neurological speech impairments regain clarity, fluency, and effective
+                                            communication.
+                                        </p>
+                                        <a href="neuro_speech_disorders_treatment_in_hyderabad.php"
+                                            class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a
+                                href="learning_disability_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/learning_disability_1.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Learning Disability</h4>
+                                        <p class="text-muted">A focused educational and therapeutic approach that helps
+                                            children overcome learning challenges and achieve academic and personal
+                                            growth.
+                                        </p>
+                                        <a href="learning_disability_treatment_in_hyderabad.php" class="btn-link">Read
+                                            More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="group_therapy_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/group therapy.png" alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Group Therapy</h4>
+                                        <p class="text-muted">A structured therapy session where individuals practice
+                                            communication and social skills in a supportive group setting to build
+                                            confidence and interaction.
+                                        </p>
+                                        <a href="group_therapy_treatment_in_hyderabad.php" class="btn-link">Read More
+                                            &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+
+
+        <div id="audiology" class="new_slider_section_sub_wrapper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="pure_tone_audiometry_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/pure_tone_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Pure Tone Audiometry</h4>
+                                        <p class="text-muted">A hearing assessment test that evaluates how well a person can hear different sound frequencies to determine the exact type and level of hearing loss.
+                                        </p>
+                                        <a href="pure_tone_audiometry_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a href="impedance_audiometry_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/Impedance_Audiometry _1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Impedance Audiometry</h4>
+                                        <p class="text-muted">A diagnostic hearing test that checks middle ear function by measuring eardrum movement and pressure changes to identify ear-related problems.
+                                        </p>
+                                        <a href="impedance_audiometry_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="speech_Audiometry_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/speech_audio_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Speech Audiometry</h4>
+                                        <p class="text-muted">A hearing test that evaluates a person’s ability to detect and understand speech sounds, helping assess speech clarity and hearing performance.
+                                        </p>
+                                        <a href="speech_Audiometry_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a href="eustachian_tube_function_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/eustachian_tube_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Eustachian Tube Function</h4>
+                                        <p class="text-muted">A diagnostic test used to assess how well the eustachian tube equalizes ear pressure and maintains healthy middle ear function.
+                                        </p>
+                                        <a href="eustachian_tube_function_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="pediatric_hearing_screening_oae_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/pediatric_hearing_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Pediatric Hearing Screening OAE</h4>
+                                        <p class="text-muted">A quick, non-invasive test that checks inner ear function in infants and children to identify hearing issues at an early stage.
+                                        </p>
+                                        <a href="pediatric_hearing_screening_oae_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="bera_test_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/bera_test_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">BERA Test</h4>
+                                        <p class="text-muted">A hearing test that measures brain responses to sound to assess hearing ability and nerve pathway function, especially in infants and unresponsive patients.
+                                        </p>
+                                        <a href="bera_test_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="sisi_test_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/sisi_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Sisi Test</h4>
+                                        <p class="text-muted">A specialized hearing test used to evaluate inner ear function by measuring the ability to detect small changes in sound intensity.
+                                        </p>
+                                        <a href="sisi_test_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"><a href="tone_decay_test_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/tone_decay_test.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Tone Decay Test</h4>
+                                        <p class="text-muted">A diagnostic hearing test that assesses auditory nerve function by measuring how long a sound can be heard at a constant intensity.
+                                        </p>
+                                        <a href="tone_decay_test_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="digital_hearing_aid_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/digital_hearing_aid_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Digital Hearing Aid</h4>
+                                        <p class="text-muted">An advanced hearing device that processes and amplifies sound digitally to provide clearer speech and improved listening comfort.
+                                        </p>
+                                        <a href="digital_hearing_aid_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="new_slider_section_sub_card"> <a href="tinnitus_evaluation_treatment_in_hyderabad.php">
+                                <div class="service-card shadow-sm">
+                                    <img src="./assets/img/service/tinnitus_evaluation_1.png"
+                                        alt="Speech Therapy">
+                                    <div class="p-4">
+                                        <h4 class="fw-bold">Tinnitus Evaluation</h4>
+                                        <p class="text-muted">A detailed assessment used to identify the cause and characteristics of ringing or buzzing sounds in the ears for proper management.
+                                        </p>
+                                        <a href="tinnitus_evaluation_treatment_in_hyderabad.php" class="btn-link">Read More &raquo;</a>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -26,6 +26,39 @@
 
 <body>
 
+    <div class="index_first_navbar_wrapper  text-white py-2 border-bottom" style="background-color: #2c3e50;">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
+
+                <div class="index_first_navbar_address d-flex align-items-center mb-2 mb-md-0">
+                    <i class="bi bi-geo-alt-fill me-2 text-warning"></i>
+                    <span class="index_first_navbar_text">F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049</span>
+                </div>
+
+                <div class="index_first_navbar_contact_info d-flex align-items-center">
+                    <div class="index_first_navbar_phone me-4">
+                        <i class="bi bi-telephone-fill me-2 text-warning"></i>
+                        <a href="tel:+919876543210" class="text-white text-decoration-none">+91 93921 89262</a>
+                    </div>
+
+                    <div class="index_first_navbar_social_icons d-flex gap-3">
+
+                        <!-- <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a> -->
+                        <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/sreenikahearing" class="rjy-social-link" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/sreenikashrcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -122,7 +155,7 @@
                     <li class="nav-item "><a class="nav-link appointment_section" href="appointment.php">Appointment</a></li>
 
 
-                   
+
 
                     <li class="nav-item">
                         <a class="nav-link new_slider_section_call_btn" href="tel:+919392189262">
