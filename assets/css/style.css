@@ -43,7 +43,7 @@ a {
     /* background: white; */
     padding: 5px 5px;
     /* padding: 5px 15px; */
-    border-radius: 50px 10px 50px 10px;
+    /* border-radius: 50px 10px 50px 10px; */
     transition: 0.4s;
 }
 
@@ -160,12 +160,12 @@ a {
 }
 
 
-@media (min-width:768px){
-      .nav-link {
+@media (min-width:768px) {
+    .nav-link {
         color: var(--sreenika-dark) !important;
     }
 }
-    
+
 
 
 @media (max-width:992px) {
@@ -404,7 +404,8 @@ a {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
+
     font-weight: 600;
     color: white;
     text-transform: uppercase;
@@ -415,12 +416,31 @@ a {
     display: inline-block;
     width: fit-content;
     border-radius: 20px;
-        font-family: 'Playfair Display', serif !important;
+    font-family: 'Playfair Display', serif !important;
+}
+
+@media (max-width:768px) {
+    .section-tag-section {
+        font-size: 25px !important;
+    }
+
+}
+
+
+@media (min-width:768px) {
+    .section-tag-section {
+        font-size: 40px !important;
+    }
+
 }
 
 
 
-
+@media (max-width:375px) {
+    .navbar-brand img {
+        width: 210px !important;
+    }
+}
 
 
 
@@ -616,6 +636,15 @@ a {
     transition: 0.5s;
 }
 
+@media (max-width:768px) {
+    .service-card img {
+        width: 100%;
+        height: 190px;
+    }
+}
+
+
+
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 34, 68, 0.15) !important;
@@ -674,16 +703,17 @@ a {
 
 .swiper-slide img {
     width: 100%;
-    height: 250px;
+    height: 150px;
+    /* height: 250px; */
     object-fit: cover;
 }
 
 /* Mobile height adjust */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .swiper-slide img {
         height: 200px;
     }
-}
+} */
 
 
 /* main content styling like about us  */
@@ -1043,7 +1073,9 @@ a {
     /* background: rgba(250, 250, 250, 0.66); */
     color: white;
 
-    padding: 60px 0 30px;
+    /* padding: 60px 0 30px; */
+    padding: 20px 0 4px;
+    ;
     border-top: 1px solid rgba(14, 165, 233, 0.2);
 }
 
@@ -1112,8 +1144,10 @@ a {
 }
 
 .rjy-social-link {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #d8ebea;
+    height: 40px;
     background-color: #d8ebea;
 
     /* background: rgba(14, 165, 233, 0.1); */
@@ -1139,7 +1173,7 @@ a {
 .rjy-footer-bottom {
     border-top: 3px solid rgba(0, 0, 0, 0.563);
     /* border-top: 1px solid rgba(14, 165, 233, 0.1); */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding-top: 30px;
     text-align: center;
 }
@@ -1624,7 +1658,7 @@ a {
 
 .info-box {
     /* background: #87CEEB; */
-/* background-color: #2078ac; */
+    /* background-color: #2078ac; */
     background: rgba(0, 34, 68, 0.9);
     /* background: #ffffff; */
     padding: 30px;
@@ -1826,7 +1860,7 @@ a {
     font-weight: 600;
     padding: 14px;
     letter-spacing: 0.5px;
-    background-color: #2078ac ;
+    background-color: #2078ac;
 }
 
 
@@ -2255,7 +2289,7 @@ a {
 /* Call Button Styling */
 .new_slider_section_call_btn {
     /* background-color: #25d366; */
-    background-color: #2078ac ;
+    background-color: #2078ac;
     /* WhatsApp Green or Professional Blue use cheyochu */
     color: white !important;
     border-radius: 50px;
@@ -2282,15 +2316,15 @@ a {
 /* Pulse Animation Logic */
 @keyframes pulse-animation {
     0% {
-        box-shadow: 0 0 0 0px #61acd842  ;
+        box-shadow: 0 0 0 0px #61acd842;
     }
 
     70% {
-        box-shadow: 0 0 0 15px      #1aabff38   ;
+        box-shadow: 0 0 0 15px #1aabff38;
     }
 
     100% {
-        box-shadow: 0 0 0 0px #02a2ff2a  ;
+        box-shadow: 0 0 0 0px #02a2ff2a;
     }
 }
 
@@ -2306,7 +2340,7 @@ a {
 
 
 @media (min-width:992px) and (max-width:1200px) {
-    .appointment_section{
+    .appointment_section {
         display: none;
     }
 }
@@ -2316,44 +2350,55 @@ a {
 
 /* count stylings  */
 /* Styling for Achievement Section */
-    .sreenika_count_section {
-        /* background-color: #92cadd; */
-        background-color: rgb(250, 246, 246);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.sreenika_count_section {
+    /* background-color: #92cadd; */
+    background-color: rgb(250, 246, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sreenika_count_main_title {
+    color: #2c3e50;
+    /* Dark Blue color from image */
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    letter-spacing: -0.5px;
+}
+
+.sreenika_count_item {
+    padding: 10px;
+}
+
+.sreenika_count_number {
+    color: #34495e;
+    /* Matching the font color in image */
+    font-size: 3.5rem;
+    /* Bold and large numbers */
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.sreenika_count_text {
+    color: #5d6d7e;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sreenika_count_number {
+        font-size: 2.5rem;
     }
 
     .sreenika_count_main_title {
-        color: #2c3e50; /* Dark Blue color from image */
-        font-size: 2rem;
-        font-weight: 700;
-        text-transform: lowercase; 
-        letter-spacing: -0.5px;
+        text-align: center;
+        font-size: 1.8rem;
     }
+}
 
-    .sreenika_count_item {
-        padding: 10px;
-    }
 
-    .sreenika_count_number {
-        color: #34495e; /* Matching the font color in image */
-        font-size: 3.5rem; /* Bold and large numbers */
-        font-weight: 700;
-        margin-bottom: 5px;
+@media (min-width:992px) and (max-width:1200px) {
+    .footer_mail {
+        font-size: 16px !important;
     }
-
-    .sreenika_count_text {
-        color: #5d6d7e;
-        font-size: 1.1rem;
-        font-weight: 400;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .sreenika_count_number {
-            font-size: 2.5rem;
-        }
-        .sreenika_count_main_title {
-            text-align: center;
-            font-size: 1.8rem;
-        }
-    }
+}

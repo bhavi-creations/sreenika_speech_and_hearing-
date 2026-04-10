@@ -398,49 +398,43 @@
                     <!-- Hearing Services -->
 
                     <div class="swiper-slide">
-                        <div class=""><img src="./assets/img/audicus_8.png" alt="" class="img-fluid"></div>
+                        <div class=""><img src="./assets/img/oticon.png" alt="" class="img-fluid" ></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class=""><img src="./assets/img/audien_9.png" alt="" class="img-fluid"></div>
+                        <div class=""><img src="./assets/img/unitron.png" alt="" class="img-fluid"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class=""><img src="./assets/img/eargo_2.png" alt="" class="img-fluid"></div>
+                        <div class=""><img src="./assets/img/widex.png" alt="" class="img-fluid"></div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class=""><img src="./assets/img/jabra_7.png" alt="" class="img-fluid"></div>
+                        <div class=""><img src="./assets/img/resound.png" alt="" class="img-fluid"></div>
                     </div>
 
                     <!-- Speech Services -->
 
                     <div class="swiper-slide">
-                        <div class=""><img src="./assets/img//lexie_3.png" alt="" class="img-fluid"></div>
+                        <div class=""><img src="./assets/img/signla.png" alt="" class="img-fluid"></div>
                     </div>
 
                   
                     <div class="swiper-slide">
-                        <div class=""><img src="./assets/img/md_1.png" alt="" class="img-fluid"></div>
+                        <div class=""><img src="./assets/img/phanak.png" alt="" class="img-fluid"></div>
                     </div>
 
                     <!-- Audiology Services -->
 
                     <div class="swiper-slide">
-                        <div class=""><img src="./assets/img/oticon_4.png" alt="" class="img-fluid"></div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class=""><img src="./assets/img/signia_6.png" alt="" class="img-fluid"></div>
+                        <div class=""><img src="./assets/img/tm.png" alt="" class="img-fluid"></div>
                     </div>
 
                     <div class="swiper-slide">
                         <div class=""><img src="./assets/img/starkey_5.png" alt="" class="img-fluid"></div>
                     </div>
 
-                    <!-- <div class="swiper-slide">
-                        <div class=""><img src="./assets/img/service/behind_the_ear_1.png" alt="" class="img-fluid"></div>
-                    </div> -->
+                    
 
                 </div>
 

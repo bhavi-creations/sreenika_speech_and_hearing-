@@ -12,9 +12,15 @@
                         </a>
                     </p>
                     <div class="rjy-social-cluster ">
-                        <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <!-- <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/sreenikahearing" class="rjy-social-link" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/sreenikashrcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/sreenikashrcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+
+                        <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/" class="rjy-social-link" target="_blank"><img src="./assets/img/facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/sreenikashrcenter/" class="rjy-social-link" target="_blank"><img src="./assets/img/instagram.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCnu0TOuz35XAg2cLUQ82vBA " class="rjy-social-link" target="_blank"><img src="./assets/img/youtube.png" alt=""></a>
+                        <a href="https://x.com/sreenikahearing" class="rjy-social-link" target="_blank"><img src="./assets/img/twitter.png" alt=""></a>
+                        <a href="https://whatsapp.com/channel/0029Va9UdOMATRSkZRJYGC3a" class="rjy-social-link" target="_blank"><img src="./assets/img/whats.png" alt=""></a>
                         <!-- <a href="#" class="rjy-social-link"><i class="bi bi-linkedin"></i></a>
                         <a href="#" class="rjy-social-link"><i class="bi bi-youtube"></i></a> -->
                     </div>
@@ -55,6 +61,8 @@
                     <p class="rjy-footer-desc">
                         F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049
                     </p>
+                    <p class="rjy-footer-desc">
+                        Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049</p>
                     <div class="mb-3 d-flex ">
                         <!-- <i class="bi bi-telephone-fill"></i> -->
                         <div class="rjy-contact-data">
@@ -63,8 +71,8 @@
                             <p> +91 9392189262</p>
                         </div>
                     </div>
-                    <div class="rjy-submit-btn" style="padding: 12px 30px;" href="mailto:infosreenika@gmail.com">
-                        <i class="bi bi-envelope-fill"></i> &nbsp; infosreenika@gmail.com
+                    <div   href="mailto:infosreenika@gmail.com">
+                       <p class="footer_mail" style="font-size: 18px; color: black;"> <i class="bi bi-envelope-fill"></i> &nbsp;   infosreenika@gmail.com</p>
                     </div>
 
                     <!-- <a href="mailto:infosreenika@gmail.com"
@@ -134,7 +142,7 @@
 
 
 <!-- social media icons   -->
-<div class="social-icons text-center">
+<!-- <div class="social-icons text-center">
     <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/</a>" target="_blank">
         <img src="./assets/img/facebook.png" class="img-fluid" alt="" /></a>
     <a href="https://www.instagram.com/sreenikashrcenter/?igshid=YTQwZjQ0NmI0OA%3D%3D" target="_blank">
@@ -144,7 +152,7 @@
         <img src="./assets/img/youtube.png" class="img-fluid" style="border-radius: 5px" alt="" /></a>
     <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGf2vQQmL7DggAAAZOb8_Ig1psDzUY6Ex_ftJ4pZkD1aIFj3kdOHryXuY7GfodYvgBWmiQoF_cxvqXTNeJnp2AWonOU5Y8S1tESajEAnjGx-IOYl90YsDASyxljsxPa-fknkKM=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsreenika-speech-and-hearing-rehabilitation-center-b44525297%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app " target="_blank">
         <img src="./assets/img/linkedin.png" class="img-fluid" alt="" /></a>
-</div>
+</div> -->
 
 <!-- 3 image slide script -->
 <script>

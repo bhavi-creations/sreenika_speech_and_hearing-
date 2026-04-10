@@ -32,7 +32,7 @@
 
                 <div class="index_first_navbar_address d-flex align-items-center mb-2 mb-md-0">
                     <i class="bi bi-geo-alt-fill me-2 text-warning"></i>
-                    <span class="index_first_navbar_text">F9R3+F6Q, Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049</span>
+                    <span class="index_first_navbar_text">Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet, Hyderabad, Telangana 500049</span>
                 </div>
 
                 <div class="index_first_navbar_contact_info d-flex align-items-center">
@@ -46,9 +46,24 @@
                         <!-- <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a> -->
-                        <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <!-- <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/sreenikahearing" class="rjy-social-link" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.instagram.com/sreenikashrcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/sreenikahearing" class="rjy-social-link" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/sreenikashrcenter/" class="rjy-social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+
+
+
+
+
+
+                        <a href="https://www.facebook.com/sreenikaspeechhearingrehabilitationcenter/" class="rjy-social-link" target="_blank"><img src="./assets/img/facebook.png" alt=""></a>
+                        <a href="https://www.instagram.com/sreenikashrcenter/" class="rjy-social-link" target="_blank"><img src="./assets/img/instagram.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCnu0TOuz35XAg2cLUQ82vBA " class="rjy-social-link" target="_blank"><img src="./assets/img/youtube.png" alt=""></a>
+                        <a href="https://x.com/sreenikahearing" class="rjy-social-link" target="_blank"><img src="./assets/img/twitter.png" alt=""></a>
+                        <a href="https://whatsapp.com/channel/0029Va9UdOMATRSkZRJYGC3a" class="rjy-social-link" target="_blank"><img src="./assets/img/whats.png" alt=""></a>
+                        <!-- <a href="https://www.instagram.com/sreenikashrcenter/" class="rjy-social-link" target="_blank"><img src="./assets/img/facebook.png" alt=""></a> -->
                     </div>
                 </div>
 
@@ -124,23 +139,23 @@
 
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item d-flex justify-content-between" href="service.php#hearing_service">Hearing Aids
-                                </a> <span>&raquo;</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="behind_the_ear_treatment_in_hyderabad.php">Behind The Ear (BTE)</a></li>
-                                    <li><a class="dropdown-item" href="receiver_in_canal_treatment_in_hyderabad.php">Receiver In Canal (RIC)</a></li>
-                                    <li><a class="dropdown-item" href="Completely_in_canal_treatment_in_hyderabad.php">Completely In Canal (CIC)</a></li>
-                                    <li><a class="dropdown-item" href="in_the_canal_treatment_in_hyderabad.php">In-The-Canal (ITC) (Instant Fit)</a></li>
-                                    <li><a class="dropdown-item" href="invisible_in_the_canal_treatment_in_hyderabad.php">Invisible-In-The-Canal (IIC)</a></li>
-                                    <li><a class="dropdown-item" href="rechargeable_bte_treatment_in_hyderabad.php">Rechargeable BTE</a></li>
-                                    <li><a class="dropdown-item" href="rechargeable_ric_treatment_in_hyderabad.php">Rechargeable RIC</a></li>
-                                    <li><a class="dropdown-item" href="rechargeable_itc_treatment_in_hyderabad.php">Rechargeable ITC</a></li>
-                                    <li><a class="dropdown-item" href="rechargeable_cic_treatment_in_hyderabad.php">Rechargeable CIC</a></li>
-                                    <li><a class="dropdown-item" href="ear_moulds_ear_plugs_treatment_in_hyderabad.php">Ear Moulds/Ear Plugs</a></li>
-                                    <li><a class="dropdown-item" href="hearing_aid_accesssories_treatment_in_hyderabad.php">Hearing Aid Accesssories</a></li>
-                                    <li><a class="dropdown-item" href="hearing_aid_batteries_treatment_in_hyderabad.php">Hearing aid batteries</a></li>
-                                    <li><a class="dropdown-item" href="hearing_aid_services_repair_treatment_in_hyderabad.php">Hearing aid services & repair</a></li>
+                                    <!-- </a> <span>&raquo;</span></a> -->
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="behind_the_ear_treatment_in_hyderabad.php">Behind The Ear (BTE)</a></li>
+                                        <li><a class="dropdown-item" href="receiver_in_canal_treatment_in_hyderabad.php">Receiver In Canal (RIC)</a></li>
+                                        <li><a class="dropdown-item" href="Completely_in_canal_treatment_in_hyderabad.php">Completely In Canal (CIC)</a></li>
+                                        <li><a class="dropdown-item" href="in_the_canal_treatment_in_hyderabad.php">In-The-Canal (ITC) (Instant Fit)</a></li>
+                                        <li><a class="dropdown-item" href="invisible_in_the_canal_treatment_in_hyderabad.php">Invisible-In-The-Canal (IIC)</a></li>
+                                        <li><a class="dropdown-item" href="rechargeable_bte_treatment_in_hyderabad.php">Rechargeable BTE</a></li>
+                                        <li><a class="dropdown-item" href="rechargeable_ric_treatment_in_hyderabad.php">Rechargeable RIC</a></li>
+                                        <li><a class="dropdown-item" href="rechargeable_itc_treatment_in_hyderabad.php">Rechargeable ITC</a></li>
+                                        <li><a class="dropdown-item" href="rechargeable_cic_treatment_in_hyderabad.php">Rechargeable CIC</a></li>
+                                        <li><a class="dropdown-item" href="ear_moulds_ear_plugs_treatment_in_hyderabad.php">Ear Moulds/Ear Plugs</a></li>
+                                        <li><a class="dropdown-item" href="hearing_aid_accesssories_treatment_in_hyderabad.php">Hearing Aid Accesssories</a></li>
+                                        <li><a class="dropdown-item" href="hearing_aid_batteries_treatment_in_hyderabad.php">Hearing aid batteries</a></li>
+                                        <li><a class="dropdown-item" href="hearing_aid_services_repair_treatment_in_hyderabad.php">Hearing aid services & repair</a></li>
 
-                                </ul>
+                                    </ul>
                             </li>
 
 
