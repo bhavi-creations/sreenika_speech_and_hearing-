@@ -1,41 +1,59 @@
 <?php
-include './db.connection/db_connection.php'; // Include your database connection file
+include './db.connection/db_connection.php';
 
-// Retrieve service filter from GET request
+// Service filter
 $service = isset($_GET['service']) ? $_GET['service'] : '';
 
-// Prepare SQL query with optional service filter
-$sql = "SELECT id, title, main_content, main_image, created_at FROM blogs";
+// Query
+$sql = "SELECT id, slug, title, main_content, main_image, created_at FROM blogs";
 if (!empty($service)) {
   $sql .= " WHERE service = ?";
 }
 $sql .= " ORDER BY created_at DESC";
 
-// Initialize statement
 $stmt = $conn->prepare($sql);
 
-// Bind parameters if service is set
 if (!empty($service)) {
   $stmt->bind_param("s", $service);
 }
 
-// Execute the statement
 $stmt->execute();
-
-// Get the result
 $result = $stmt->get_result();
 ?>
 
-
-
-
-
-
 <?php include 'header.php'; ?>
 
+<style>
+  .post-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-<main class="main_blogs_content">
-  <!-- Filter Buttons -->
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .post-desc {
+    flex-grow: 1;
+  }
+
+  .blog-date {
+    margin-top: 10px;
+    font-size: 13px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+</style>
+
+<main class="blog_section_stylings">
   <!-- <div class="container">
     <div class="filter_buttons redirect_section mt-4">
       <a href="blogs.php?service="><button class="redirect_blog_srivice">All</button></a>
@@ -52,67 +70,75 @@ $result = $stmt->get_result();
       <a href="blogs.php?service=Teeth Whitening"><button class="redirect_blog_srivice">Teeth Whitening</button></a>
       <a href="blogs.php?service=Smile Makeover"><button class="redirect_blog_srivice">Smile Makeover</button></a>
       <a href="blogs.php?service=Full Mouth Restoration"><button class="redirect_blog_srivice">Full Mouth Restoration</button></a>
-
     </div>
   </div> -->
-  <h1 class="  d-flex justify-content-center mt-5">Blogs</h1>
-  
 
- 
-
-
-  <!-- Blogs Section -->
   <div class="container blog-sidebar-list" style="padding-top: 20px; padding-bottom: 20px;">
     <div class="row">
       <div class="col-lg-12">
         <div class="grid row">
+
           <?php
           if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
 
-              
-              $image_path = !empty($row['main_image']) ? "admin/uploads/photos/{$row['main_image']}" : "default_image.png";
-            
-            
+              // ✅ Image path
+              $image_path = !empty($row['main_image'])
+                ? "admin/uploads/photos/" . htmlspecialchars($row['main_image'])
+                : "default_image.png";
+
+              // ✅ SEO URL (slug)
+              $blog_link_val = !empty($row['slug']) ? urlencode($row['slug']) : $row['id'];
+              $final_url = "fullblog.php?id=" . $blog_link_val;
+
+              // ✅ Date format
+              $formatted_date = date("d M Y, h:i A", strtotime($row['created_at']));
+
+              // ✅ Safe preview (Quill content → text)
+              $preview = substr(strip_tags(html_entity_decode($row['main_content'])), 0, 100);
+
               echo "
-                                    <div class='grid-item col-sm-12 col-lg-4 mb-5'>
-                                        <div class='post-box card_bg_div_box'>
-                                            <figure>
-                                                <a href='fullblog.php?id={$row['id']}'>
-                                                    <img src='{$image_path}' alt='Blog Image' class='img-fluid blog_box_image'>
-                                                </a>
-                                            </figure>
-                                            <div class='box-content'>
-                                                <h5 class='box-title'><a  class='box-title' href='fullblog.php?id={$row['id']}'>" . htmlspecialchars($row['title']) . "</a></h5>
-                                                <p class='post-desc  mt-5' style='text-align: justify;'>" . substr(strip_tags($row['main_content']), 0, 90) . "...</p>
-                                                <a href='fullblog.php?id={$row['id']}'><button class='blog_main_btn'>Read More..</button></a>
-                                            </div>
-                                        </div>
-                                    </div>";
+              <div class='grid-item col-sm-12 col-lg-4 mb-5'>
+                  <div class='post-box card_bg_div_box'>
+                      <figure>
+                          <a href='{$final_url}'>
+                              <img src='{$image_path}' alt='Blog Image' class='img-fluid blog_box_image'>
+                          </a>
+                      </figure>
+
+                      <div class='box-content'>
+                          <h5 class='box-title'>
+                              <a class='box-title' href='{$final_url}'>" . htmlspecialchars($row['title']) . "</a>
+                          </h5>
+
+                          <p class='post-desc mt-3' style='text-align: justify;'>
+                              {$preview}...
+                          </p>
+
+                          <a href='{$final_url}'>
+                              <button class='blog_main_btn'>Read More..</button>
+                          </a>
+
+                          <!-- ✅ FIXED DATE ICON -->
+                          <p class='blog-date'>🕒 {$formatted_date}</p>
+                      </div>
+                  </div>
+              </div>";
             }
           } else {
             echo "<p>No blog posts found.</p>";
           }
           ?>
+
         </div>
       </div>
     </div>
   </div>
 </main>
 
-
-
-<!-- ======= Footer ======= -->
 <?php include('./footer.php'); ?>
 
-
-
-</body>
-
-</html> <?php
-        // Close the statement and connection
-        $stmt->close();
-        $conn->close();
-        ?>
-
-
+<?php
+$stmt->close();
+$conn->close();
+?>
