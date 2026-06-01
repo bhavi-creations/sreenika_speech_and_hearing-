@@ -99,7 +99,8 @@
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item d-flex justify-content-between" href="service.php#audio_section">Audiology
                                     Services
-                                    <span>&raquo;</span></a>
+                                    <!-- <span>&raquo;</span> -->
+                                </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="pure_tone_audiometry_treatment_in_hyderabad.php">Pure Tone Audiometry</a></li>
                                     <li><a class="dropdown-item" href="impedance_audiometry_treatment_in_hyderabad.php">Impedance Audiometry</a></li>
@@ -114,9 +115,9 @@
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
-                                <a class="dropdown-item d-flex justify-content-between" href="service.php#speech_services">Speech
-                                    Services
-                                    <span>&raquo;</span></a>
+                                <a class="dropdown-item d-flex justify-content-between" href="service.php#speech_services">Child development services
+                                    <!-- <span>&raquo;</span> -->
+                                </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="speech_assessment_treatment_in_hyderabad.php">Speech Assessment</a></li>
                                     <li><a class="dropdown-item" href="speech_therapy_treatment_in_hyderabad.php">Speech Therapy</a></li>

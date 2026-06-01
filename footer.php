@@ -46,7 +46,7 @@
                     <h4>Our Service</h4>
                     <ul class="rjy-footer-links">
                         <li><a href="service.php#audio_section"><i class="bi bi-chevron-right"></i>Audiology Services</a></li>
-                        <li><a href="service.php#speech_services"><i class="bi bi-chevron-right"></i> Speech Services</a></li>
+                        <li><a href="service.php#speech_services"><i class="bi bi-chevron-right"></i> Child development services</a></li>
                         <li><a href="service.php#hearing_service"><i class="bi bi-chevron-right"></i> Hearing Aids</a></li>
                         <!-- <li><a href="#"><i class="bi bi-chevron-right"></i> Steel Sheets</a></li>
                         <li><a href="#"><i class="bi bi-chevron-right"></i> Binding Wire</a></li>

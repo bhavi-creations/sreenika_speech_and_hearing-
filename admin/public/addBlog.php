@@ -1,11 +1,14 @@
 <?php
-// Database connection
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// DB connection
 include '../../db.connection/db_connection.php';
 
-// ✅ UTF-8 support (VERY IMPORTANT for Telugu + HTML)
+// UTF-8
 mysqli_set_charset($conn, "utf8mb4");
 
-// Function to generate a unique file name
+// Unique file name
 function generateUniqueFileName($fileName)
 {
     $ext = pathinfo($fileName, PATHINFO_EXTENSION);
@@ -15,81 +18,83 @@ function generateUniqueFileName($fileName)
 // Allowed image types
 $allowed_extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'];
 
-// Check if form is submitted
+// Upload function
+function uploadImage($fileKey, $directoryName, $allowed_extensions)
+{
+    $path = '';
+
+    if (isset($_FILES[$fileKey]) && !empty($_FILES[$fileKey]['name'])) {
+
+        $ext = strtolower(pathinfo($_FILES[$fileKey]['name'], PATHINFO_EXTENSION));
+
+        if (!in_array($ext, $allowed_extensions)) {
+            die("Invalid file type: " . $fileKey);
+        }
+
+        $directory = __DIR__ . "/../uploads/$directoryName/";
+        if (!is_dir($directory)) {
+            mkdir($directory, 0777, true);
+        }
+
+        $fileName = generateUniqueFileName($_FILES[$fileKey]['name']);
+        $fullPath = $directory . $fileName;
+
+        if (move_uploaded_file($_FILES[$fileKey]['tmp_name'], $fullPath)) {
+            $path = $fileName;
+        } else {
+            die("Error uploading: " . $fileKey);
+        }
+    }
+
+    return $path;
+}
+
+// Form submit
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    // Collect form data
     $blog_id = isset($_POST['id']) ? intval($_POST['id']) : 0;
 
     $title = $_POST['title'] ?? '';
     $slug = $_POST['slug'] ?? '';
-
-    // ✅ Quill HTML (SAFE)
-    $main_content = isset($_POST['main_content']) ? trim($_POST['main_content']) : '';
-    $full_content = isset($_POST['full_content']) ? trim($_POST['full_content']) : '';
-
+    $main_content = $_POST['main_content'] ?? '';
+    $full_content = $_POST['full_content'] ?? '';
     $service = $_POST['service'] ?? '';
-    $logo_link = $_POST['logo_link'] ?? '';
 
-    // Telugu fields
     $telugu_title = $_POST['telugu_title'] ?? '';
-    $telugu_main_content = isset($_POST['telugu_main_content']) ? trim($_POST['telugu_main_content']) : '';
-    $telugu_full_content = isset($_POST['telugu_full_content']) ? trim($_POST['telugu_full_content']) : '';
+    $telugu_main_content = $_POST['telugu_main_content'] ?? '';
+    $telugu_full_content = $_POST['telugu_full_content'] ?? '';
 
-    // Section contents
     $section1_content = $_POST['section1_content'] ?? '';
     $section2_content = $_POST['section2_content'] ?? '';
     $section3_content = $_POST['section3_content'] ?? '';
 
-    // SEO
     $hashtags = $_POST['hashtags'] ?? '';
     $keypoints = $_POST['keypoints'] ?? '';
 
     $hashtags_json = json_encode(array_map('trim', explode(',', $hashtags)));
     $keypoints_json = json_encode(array_map('trim', explode(',', $keypoints)));
 
-    // Required fields check
-    if (empty($title) || empty($main_content) || empty($full_content) || empty($service) || empty($slug)) {
-        die("Error: Title, Slug, Main Content, Full Content, and Service cannot be empty.");
+    // Required check
+    if (empty($title) || empty($slug) || empty($main_content) || empty($full_content) || empty($service)) {
+        die("Required fields missing");
     }
 
-    // Helper function for image upload
-    function uploadImage($fileKey, $directoryName, $allowed_extensions)
-    {
-        $path = '';
-        if (!empty($_FILES[$fileKey]['name'])) {
-
-            $ext = strtolower(pathinfo($_FILES[$fileKey]['name'], PATHINFO_EXTENSION));
-
-            if (!in_array($ext, $allowed_extensions)) {
-                die("Error: Invalid file type for $fileKey.");
-            }
-
-            $directory = __DIR__ . "/../uploads/$directoryName/";
-            if (!is_dir($directory)) mkdir($directory, 0777, true);
-
-            $fileName = generateUniqueFileName($_FILES[$fileKey]['name']);
-            $fullPath = $directory . $fileName;
-
-            if (move_uploaded_file($_FILES[$fileKey]['tmp_name'], $fullPath)) {
-                $path = $fileName;
-            } else {
-                die("Error uploading $fileKey.");
-            }
-        }
-        return $path;
-    }
-
-    // Upload main assets
+    // Uploads
     $title_image_path = uploadImage('title_image', 'photos', $allowed_extensions);
     $main_image_path  = uploadImage('main_image', 'photos', $allowed_extensions);
-    $logo_path        = uploadImage('logo', 'logos', $allowed_extensions);
 
-    // Upload video
+    $section1_image = uploadImage('section1_image', 'photos', $allowed_extensions);
+    $section2_image = uploadImage('section2_image', 'photos', $allowed_extensions);
+    $section3_image = uploadImage('section3_image', 'photos', $allowed_extensions);
+
+    // Video
     $video_path = '';
-    if (!empty($_FILES['video']['name'])) {
+    if (isset($_FILES['video']) && !empty($_FILES['video']['name'])) {
+
         $video_directory = __DIR__ . "/../uploads/videos/";
-        if (!is_dir($video_directory)) mkdir($video_directory, 0777, true);
+        if (!is_dir($video_directory)) {
+            mkdir($video_directory, 0777, true);
+        }
 
         $video_name = generateUniqueFileName($_FILES['video']['name']);
         $fullVideoPath = $video_directory . $video_name;
@@ -97,31 +102,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (move_uploaded_file($_FILES['video']['tmp_name'], $fullVideoPath)) {
             $video_path = $video_name;
         } else {
-            die("Error uploading video.");
+            die("Error uploading video");
         }
     }
 
-    // Upload section images
-    $section1_image = uploadImage('section1_image', 'photos', $allowed_extensions);
-    $section2_image = uploadImage('section2_image', 'photos', $allowed_extensions);
-    $section3_image = uploadImage('section3_image', 'photos', $allowed_extensions);
-
-    // ================= UPDATE BLOG =================
+    // ================= UPDATE =================
     if ($blog_id > 0) {
 
-        $stmt = $conn->prepare("UPDATE blogs 
-        SET title=?, slug=?, main_content=?, full_content=?, 
+        $stmt = $conn->prepare("UPDATE blogs SET
+            title=?, slug=?, main_content=?, full_content=?,
             telugu_title=?, telugu_main_content=?, telugu_full_content=?,
             hashtags=?, keypoints=?,
-            title_image=?, main_image=?, video=?, 
-            service=?, logo=?, logo_link=?,
+            title_image=?, main_image=?, video=?,
+            service=?,
             section1_content=?, section1_image=?,
             section2_content=?, section2_image=?,
             section3_content=?, section3_image=?
-        WHERE id=?");
+            WHERE id=?");
+
+        if (!$stmt) {
+            die("Prepare failed: " . $conn->error);
+        }
 
         $stmt->bind_param(
-            "sssssssssssssssssssssi",
+            "sssssssssssssssssssi",
             $title,
             $slug,
             $main_content,
@@ -135,8 +139,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $main_image_path,
             $video_path,
             $service,
-            $logo_path,
-            $logo_link,
             $section1_content,
             $section1_image,
             $section2_content,
@@ -147,20 +149,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         );
     }
 
-    // ================= INSERT BLOG =================
+    // ================= INSERT =================
     else {
 
-        $stmt = $conn->prepare("INSERT INTO blogs 
-        (title, slug, main_content, full_content, telugu_title, telugu_main_content, telugu_full_content,
-         hashtags, keypoints,
-         title_image, main_image, video, service, logo, logo_link,
-         section1_content, section1_image,
-         section2_content, section2_image,
-         section3_content, section3_image, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW())");
+        $stmt = $conn->prepare("INSERT INTO blogs
+        (title, slug, main_content, full_content,
+        telugu_title, telugu_main_content, telugu_full_content,
+        hashtags, keypoints,
+        title_image, main_image, video,
+        service,
+        section1_content, section1_image,
+        section2_content, section2_image,
+        section3_content, section3_image, created_at)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW())");
+
+        if (!$stmt) {
+            die("Prepare failed: " . $conn->error);
+        }
 
         $stmt->bind_param(
-            "sssssssssssssssssssss",
+            "sssssssssssssssssss",
             $title,
             $slug,
             $main_content,
@@ -174,8 +182,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $main_image_path,
             $video_path,
             $service,
-            $logo_path,
-            $logo_link,
             $section1_content,
             $section1_image,
             $section2_content,
@@ -186,14 +192,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Execute
-    if ($stmt->execute()) {
-        header("Location: allBlog.php");
-        exit();
-    } else {
-        die("Error: " . $stmt->error);
+    if (!$stmt->execute()) {
+        die("Execute Error: " . $stmt->error);
     }
 
     $stmt->close();
+
+    header("Location: allBlog.php");
+    exit();
 }
 
 $conn->close();
+?>

@@ -460,7 +460,7 @@
 
     <div class="container my-5">
         <h1 class="d-flex justify-content-center ">
-            <div class="section-tag-section">Child Development </div>
+            <div class="section-tag-section">Child development services       </div>
         </h1>
         <div class="row">
             <div class="col-md-4 mt-5">
@@ -1291,7 +1291,7 @@
                         </div>
                         <div class="rjy-contact-data">
                             <h5>Phone Number</h5>
-                            <p>+91 72071 09262</p>
+                            <p>+91 72071 09262,9392189262</p>
                         </div>
                     </div>
 

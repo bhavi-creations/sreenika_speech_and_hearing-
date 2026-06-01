@@ -426,9 +426,9 @@
 
                     <!-- Audiology Services -->
 
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                         <div class=""><img src="./assets/img/tm.png" alt="" class="img-fluid"></div>
-                    </div>
+                    </div> -->
 
                     <div class="swiper-slide">
                         <div class=""><img src="./assets/img/starkey_5.png" alt="" class="img-fluid"></div>
