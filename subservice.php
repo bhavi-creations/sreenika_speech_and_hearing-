@@ -118,16 +118,16 @@
                 <li class="s-item audiology"><a href="#">Tinnitus Management <i class="fa-solid fa-chevron-right"></i></a></li> -->
 
 
-            <li><a class="s-item audiology" href="pure_tone_audiometry_treatment_in_hyderabad.php">Pure Tone Audiometry</a></li>
-            <li><a class="s-item audiology" href="impedance_audiometry_treatment_in_hyderabad.php">Impedance Audiometry</a></li>
-            <li><a class="s-item audiology" href="speech_Audiometry_treatment_in_hyderabad.php">Speech Audiometry</a></li>
-            <li><a class="s-item audiology" href="eustachian_tube_function_treatment_in_hyderabad.php">Eustachian Tube Function</a></li>
-            <li><a class="s-item audiology" href="pediatric_hearing_screening_oae_treatment_in_hyderabad.php">Pediatric Hearing Screening OAE</a></li>
-            <li><a class="s-item audiology" href="bera_test_treatment_in_hyderabad.php">BERA Test</a></li>
-            <li><a class="s-item audiology" href="sisi_test_treatment_in_hyderabad.php">Sisi Test</a></li>
-            <li><a class="s-item audiology" href="tone_decay_test_treatment_in_hyderabad.php">Tone Decay Test</a></li>
-            <li><a class="s-item audiology" href="digital_hearing_aid_treatment_in_hyderabad.php">Digital Hearing Aid </a></li>
-            <li><a class="s-item audiology" href="tinnitus_evaluation_treatment_in_hyderabad.php">Tinnitus Evaluation</a></li>
+            <li><a class="s-item audiology" href="pure-tone-audiometry-treatment-in-hyderabad.php">Pure Tone Audiometry</a></li>
+            <li><a class="s-item audiology" href="impedance-audiometry-treatment-in-hyderabad.php">Impedance Audiometry</a></li>
+            <li><a class="s-item audiology" href="speech-audiometry-treatment-in-hyderabad.php">Speech Audiometry</a></li>
+            <li><a class="s-item audiology" href="eustachian-tube-function-treatment-in-hyderabad.php">Eustachian Tube Function</a></li>
+            <li><a class="s-item audiology" href="pediatric-hearing-screening-oae-treatment-in-hyderabad.php">Pediatric Hearing Screening OAE</a></li>
+            <li><a class="s-item audiology" href="bera-test-treatment-in-hyderabad.php">BERA Test</a></li>
+            <li><a class="s-item audiology" href="sisi-test-treatment-in-hyderabad.php">Sisi Test</a></li>
+            <li><a class="s-item audiology" href="tone-decay-test-treatment-in-hyderabad.php">Tone Decay Test</a></li>
+            <li><a class="s-item audiology" href="digital-hearing-aid-treatment-in-hyderabad.php">Digital Hearing Aid </a></li>
+            <li><a class="s-item audiology" href="tinnitus-evaluation-treatment-in-hyderabad.php">Tinnitus Evaluation</a></li>
 
 
 
@@ -150,19 +150,19 @@
 
 
 
-            <li><a class="s-item speech" href="speech_assessment_treatment_in_hyderabad.php">Speech Assessment</a></li>
-            <li><a class="s-item speech" href="speech_therapy_treatment_in_hyderabad.php">Speech Therapy</a></li>
-            <li><a class="s-item speech" href="occupational_therapy_treatment_in_hyderabad.php">Occupational Therapy</a></li>
-            <li><a class="s-item speech" href="aba_therapy_treatment_in_hyderabad.php">ABA Therapy</a></li>
-            <li><a class="s-item speech" href="autism_adhd_therapy_treatment_in_hyderabad.php">Autism/ADHD</a></li>
-            <li><a class="s-item speech" href="auditory_verhal_therapy_treatment_in_hyderabad.php">Auditory Verhal Therapy</a></li>
-            <li><a class="s-item speech" href="articulation_therapy_treatment_in_hyderabad.php">Articulation Therapy</a></li>
-            <li><a class="s-item speech" href="stammering_stuttering_treatment_in_hyderabad.php">Stammering/Stuttering</a></li>
-            <li><a class="s-item speech" href="voice_therapy_treatment_in_hyderabad.php">Voice Therapy</a></li>
-            <li><a class="s-item speech" href="special_education_treatment_in_hyderabad.php">Special Education</a></li>
-            <li><a class="s-item speech" href="neuro_speech_disorders_treatment_in_hyderabad.php">Neuro-Speech Disorders</a></li>
-            <li><a class="s-item speech" href="learning_disability_treatment_in_hyderabad.php">Learning Disability</a></li>
-            <li><a class="s-item speech" href="group_therapy_treatment_in_hyderabad.php">Group Therapy</a></li>
+            <li><a class="s-item speech" href="speech-assessment-treatment-in-hyderabad.php">Speech Assessment</a></li>
+            <li><a class="s-item speech" href="speech-therapy-treatment-in-hyderabad.php">Speech Therapy</a></li>
+            <li><a class="s-item speech" href="occupational-therapy-treatment-in-hyderabad.php">Occupational Therapy</a></li>
+            <li><a class="s-item speech" href="aba-therapy-treatment-in-hyderabad.php">ABA Therapy</a></li>
+            <li><a class="s-item speech" href="autism-adhd-therapy-treatment-in-hyderabad.php">Autism/ADHD</a></li>
+            <li><a class="s-item speech" href="auditory-verhal-therapy-treatment-in-hyderabad.php">Auditory Verhal Therapy</a></li>
+            <li><a class="s-item speech" href="articulation-therapy-treatment-in-hyderabad.php">Articulation Therapy</a></li>
+            <li><a class="s-item speech" href="stammering-stuttering-treatment-in-hyderabad.php">Stammering/Stuttering</a></li>
+            <li><a class="s-item speech" href="voice-therapy-treatment-in-hyderabad.php">Voice Therapy</a></li>
+            <li><a class="s-item speech" href="special-education-treatment-in-hyderabad.php">Special Education</a></li>
+            <li><a class="s-item speech" href="neuro-speech-disorders-treatment-in-hyderabad.php">Neuro-Speech Disorders</a></li>
+            <li><a class="s-item speech" href="learning-disability-treatment-in-hyderabad.php">Learning Disability</a></li>
+            <li><a class="s-item speech" href="group-therapy-treatment-in-hyderabad.php">Group Therapy</a></li>
 
 
 
@@ -188,19 +188,19 @@
 
 
 
-            <li><a class="s-item hearing" href="behind_the_ear_treatment_in_hyderabad.php">Behind The Ear (BTE)</a></li>
-            <li><a class="s-item hearing" href="receiver_in_canal_treatment_in_hyderabad.php">Receiver In Canal (RIC)</a></li>
-            <li><a class="s-item hearing" href="Completely_in_canal_treatment_in_hyderabad.php">Completely In Canal (CIC)</a></li>
-            <li><a class="s-item hearing" href="in_the_canal_treatment_in_hyderabad.php">In-The-Canal (ITC) (Instant Fit)</a></li>
-            <li><a class="s-item hearing" href="invisible_in_the_canal_treatment_in_hyderabad.php">Invisible-In-The-Canal (IIC)</a></li>
-            <li><a class="s-item hearing" href="rechargeable_bte_treatment_in_hyderabad.php">Rechargeable BTE</a></li>
-            <li><a class="s-item hearing" href="rechargeable_ric_treatment_in_hyderabad.php">Rechargeable RIC</a></li>
-            <li><a class="s-item hearing" href="rechargeable_itc_treatment_in_hyderabad.php">Rechargeable ITC</a></li>
-            <li><a class="s-item hearing" href="rechargeable_cic_treatment_in_hyderabad.php">Rechargeable CIC</a></li>
-            <li><a class="s-item hearing" href="ear_moulds_ear_plugs_treatment_in_hyderabad.php">Ear Moulds/Ear Plugs</a></li>
-            <li><a class="s-item hearing" href="hearing_aid_accesssories_treatment_in_hyderabad.php">Hearing Aid Accesssories</a></li>
-            <li><a class="s-item hearing" href="hearing_aid_batteries_treatment_in_hyderabad.php">Hearing aid batteries</a></li>
-            <li><a class="s-item hearing" href="hearing_aid_services_repair_treatment_in_hyderabad.php">Hearing aid services & repair</a></li>
+            <li><a class="s-item hearing" href="behind-the-ear-treatment-in-hyderabad.php">Behind The Ear (BTE)</a></li>
+            <li><a class="s-item hearing" href="receiver-in-canal-treatment-in-hyderabad.php">Receiver In Canal (RIC)</a></li>
+            <li><a class="s-item hearing" href="completely-in-canal-treatment-in-hyderabad.php">Completely In Canal (CIC)</a></li>
+            <li><a class="s-item hearing" href="in-the-canal-treatment-in-hyderabad.php">In-The-Canal (ITC) (Instant Fit)</a></li>
+            <li><a class="s-item hearing" href="invisible_in-the-canal-treatment-in-hyderabad.php">Invisible-In-The-Canal (IIC)</a></li>
+            <li><a class="s-item hearing" href="rechargeable-bte-treatment-in-hyderabad.php">Rechargeable BTE</a></li>
+            <li><a class="s-item hearing" href="rechargeable-ric-treatment-in-hyderabad.php">Rechargeable RIC</a></li>
+            <li><a class="s-item hearing" href="rechargeable-itc-treatment-in-hyderabad.php">Rechargeable ITC</a></li>
+            <li><a class="s-item hearing" href="rechargeable-cic-treatment-in-hyderabad.php">Rechargeable CIC</a></li>
+            <li><a class="s-item hearing" href="ear-moulds-ear-plugs-treatment-in-hyderabad.php">Ear Moulds/Ear Plugs</a></li>
+            <li><a class="s-item hearing" href="hearing-aid-accesssories-treatment-in-hyderabad.php">Hearing Aid Accesssories</a></li>
+            <li><a class="s-item hearing" href="hearing-aid-batteries-treatment-in-hyderabad.php">Hearing aid batteries</a></li>
+            <li><a class="s-item hearing" href="hearing-aid-services-repair-treatment-in-hyderabad.php">Hearing aid services & repair</a></li>
 
         </ul>
     </div>

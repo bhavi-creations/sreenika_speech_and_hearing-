@@ -90,10 +90,10 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="about.html" id="serviceDrop" role="button"
+                        <a class="nav-link dropdown-toggle" href="service.php" id="serviceDrop" role="button"
                             data-bs-toggle="dropdown">Services</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
@@ -102,16 +102,16 @@
                                     <!-- <span>&raquo;</span> -->
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="pure_tone_audiometry_treatment_in_hyderabad.php">Pure Tone Audiometry</a></li>
-                                    <li><a class="dropdown-item" href="impedance_audiometry_treatment_in_hyderabad.php">Impedance Audiometry</a></li>
-                                    <li><a class="dropdown-item" href="speech_Audiometry_treatment_in_hyderabad.php">Speech Audiometry</a></li>
-                                    <li><a class="dropdown-item" href="eustachian_tube_function_treatment_in_hyderabad.php">Eustachian Tube Function</a></li>
-                                    <li><a class="dropdown-item" href="pediatric_hearing_screening_oae_treatment_in_hyderabad.php">Pediatric Hearing Screening OAE</a></li>
-                                    <li><a class="dropdown-item" href="bera_test_treatment_in_hyderabad.php">BERA Test</a></li>
-                                    <li><a class="dropdown-item" href="sisi_test_treatment_in_hyderabad.php">Sisi Test</a></li>
-                                    <li><a class="dropdown-item" href="tone_decay_test_treatment_in_hyderabad.php">Tone Decay Test</a></li>
-                                    <li><a class="dropdown-item" href="digital_hearing_aid_treatment_in_hyderabad.php">Digital Hearing Aid </a></li>
-                                    <li><a class="dropdown-item" href="tinnitus_evaluation_treatment_in_hyderabad.php">Tinnitus Evaluation</a></li>
+                                    <li><a class="dropdown-item" href="pure-tone-audiometry-treatment-in-hyderabad.php">Pure Tone Audiometry</a></li>
+                                    <li><a class="dropdown-item" href="impedance-audiometry-treatment-in-hyderabad.php">Impedance Audiometry</a></li>
+                                    <li><a class="dropdown-item" href="speech-audiometry-treatment-in-hyderabad.php">Speech Audiometry</a></li>
+                                    <li><a class="dropdown-item" href="eustachian-tube-function-treatment-in-hyderabad.php">Eustachian Tube Function</a></li>
+                                    <li><a class="dropdown-item" href="pediatric-hearing-screening-oae-treatment-in-hyderabad.php">Pediatric Hearing Screening OAE</a></li>
+                                    <li><a class="dropdown-item" href="bera-test-treatment-in-hyderabad.php">BERA Test</a></li>
+                                    <li><a class="dropdown-item" href="sisi-test-treatment-in-hyderabad.php">Sisi Test</a></li>
+                                    <li><a class="dropdown-item" href="tone-decay-test-treatment-in-hyderabad.php">Tone Decay Test</a></li>
+                                    <li><a class="dropdown-item" href="digital-hearing-aid-treatment-in-hyderabad.php">Digital Hearing Aid </a></li>
+                                    <li><a class="dropdown-item" href="tinnitus-evaluation-treatment-in-hyderabad.php">Tinnitus Evaluation</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
@@ -119,19 +119,19 @@
                                     <!-- <span>&raquo;</span> -->
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="speech_assessment_treatment_in_hyderabad.php">Speech Assessment</a></li>
-                                    <li><a class="dropdown-item" href="speech_therapy_treatment_in_hyderabad.php">Speech Therapy</a></li>
-                                    <li><a class="dropdown-item" href="occupational_therapy_treatment_in_hyderabad.php">Occupational Therapy</a></li>
-                                    <li><a class="dropdown-item" href="aba_therapy_treatment_in_hyderabad.php">ABA Therapy</a></li>
-                                    <li><a class="dropdown-item" href="autism_adhd_therapy_treatment_in_hyderabad.php">Autism/ADHD</a></li>
-                                    <li><a class="dropdown-item" href="auditory_verhal_therapy_treatment_in_hyderabad.php">Auditory Verhal Therapy</a></li>
-                                    <li><a class="dropdown-item" href="articulation_therapy_treatment_in_hyderabad.php">Articulation Therapy</a></li>
-                                    <li><a class="dropdown-item" href="stammering_stuttering_treatment_in_hyderabad.php">Stammering/Stuttering</a></li>
-                                    <li><a class="dropdown-item" href="voice_therapy_treatment_in_hyderabad.php">Voice Therapy</a></li>
-                                    <li><a class="dropdown-item" href="special_education_treatment_in_hyderabad.php">Special Education</a></li>
-                                    <li><a class="dropdown-item" href="neuro_speech_disorders_treatment_in_hyderabad.php">Neuro-Speech Disorders</a></li>
-                                    <li><a class="dropdown-item" href="learning_disability_treatment_in_hyderabad.php">Learning Disability</a></li>
-                                    <li><a class="dropdown-item" href="group_therapy_treatment_in_hyderabad.php">Group Therapy</a></li>
+                                    <li><a class="dropdown-item" href="speech-assessment-treatment-in-hyderabad.php">Speech Assessment</a></li>
+                                    <li><a class="dropdown-item" href="speech-therapy-treatment-in-hyderabad.php">Speech Therapy</a></li>
+                                    <li><a class="dropdown-item" href="occupational-therapy-treatment-in-hyderabad.php">Occupational Therapy</a></li>
+                                    <li><a class="dropdown-item" href="aba-therapy-treatment-in-hyderabad.php">ABA Therapy</a></li>
+                                    <li><a class="dropdown-item" href="autism-adhd-therapy-treatment-in-hyderabad.php">Autism/ADHD</a></li>
+                                    <li><a class="dropdown-item" href="auditory-verhal-therapy-treatment-in-hyderabad.php">Auditory Verhal Therapy</a></li>
+                                    <li><a class="dropdown-item" href="articulation-therapy-treatment-in-hyderabad.php">Articulation Therapy</a></li>
+                                    <li><a class="dropdown-item" href="stammering-stuttering-treatment-in-hyderabad.php">Stammering/Stuttering</a></li>
+                                    <li><a class="dropdown-item" href="voice-therapy-treatment-in-hyderabad.php">Voice Therapy</a></li>
+                                    <li><a class="dropdown-item" href="special-education-treatment-in-hyderabad.php">Special Education</a></li>
+                                    <li><a class="dropdown-item" href="neuro-speech-disorders-treatment-in-hyderabad.php">Neuro-Speech Disorders</a></li>
+                                    <li><a class="dropdown-item" href="learning-disability-treatment-in-hyderabad.php">Learning Disability</a></li>
+                                    <li><a class="dropdown-item" href="group-therapy-treatment-in-hyderabad.php">Group Therapy</a></li>
 
                                 </ul>
                             </li>
@@ -142,19 +142,19 @@
                                 <a class="dropdown-item d-flex justify-content-between" href="service.php#hearing_service">Hearing Aids
                                     <!-- </a> <span>&raquo;</span></a> -->
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="behind_the_ear_treatment_in_hyderabad.php">Behind The Ear (BTE)</a></li>
-                                        <li><a class="dropdown-item" href="receiver_in_canal_treatment_in_hyderabad.php">Receiver In Canal (RIC)</a></li>
-                                        <li><a class="dropdown-item" href="Completely_in_canal_treatment_in_hyderabad.php">Completely In Canal (CIC)</a></li>
-                                        <li><a class="dropdown-item" href="in_the_canal_treatment_in_hyderabad.php">In-The-Canal (ITC) (Instant Fit)</a></li>
-                                        <li><a class="dropdown-item" href="invisible_in_the_canal_treatment_in_hyderabad.php">Invisible-In-The-Canal (IIC)</a></li>
-                                        <li><a class="dropdown-item" href="rechargeable_bte_treatment_in_hyderabad.php">Rechargeable BTE</a></li>
-                                        <li><a class="dropdown-item" href="rechargeable_ric_treatment_in_hyderabad.php">Rechargeable RIC</a></li>
-                                        <li><a class="dropdown-item" href="rechargeable_itc_treatment_in_hyderabad.php">Rechargeable ITC</a></li>
-                                        <li><a class="dropdown-item" href="rechargeable_cic_treatment_in_hyderabad.php">Rechargeable CIC</a></li>
-                                        <li><a class="dropdown-item" href="ear_moulds_ear_plugs_treatment_in_hyderabad.php">Ear Moulds/Ear Plugs</a></li>
-                                        <li><a class="dropdown-item" href="hearing_aid_accesssories_treatment_in_hyderabad.php">Hearing Aid Accesssories</a></li>
-                                        <li><a class="dropdown-item" href="hearing_aid_batteries_treatment_in_hyderabad.php">Hearing aid batteries</a></li>
-                                        <li><a class="dropdown-item" href="hearing_aid_services_repair_treatment_in_hyderabad.php">Hearing aid services & repair</a></li>
+                                        <li><a class="dropdown-item" href="behind-the-ear-treatment-in-hyderabad.php">Behind The Ear (BTE)</a></li>
+                                        <li><a class="dropdown-item" href="receiver-in-canal-treatment-in-hyderabad.php">Receiver In Canal (RIC)</a></li>
+                                        <li><a class="dropdown-item" href="completely-in-canal-treatment-in-hyderabad.php">Completely In Canal (CIC)</a></li>
+                                        <li><a class="dropdown-item" href="in-the-canal-treatment-in-hyderabad.php">In-The-Canal (ITC) (Instant Fit)</a></li>
+                                        <li><a class="dropdown-item" href="invisible_in-the-canal-treatment-in-hyderabad.php">Invisible-In-The-Canal (IIC)</a></li>
+                                        <li><a class="dropdown-item" href="rechargeable-bte-treatment-in-hyderabad.php">Rechargeable BTE</a></li>
+                                        <li><a class="dropdown-item" href="rechargeable-ric-treatment-in-hyderabad.php">Rechargeable RIC</a></li>
+                                        <li><a class="dropdown-item" href="rechargeable-itc-treatment-in-hyderabad.php">Rechargeable ITC</a></li>
+                                        <li><a class="dropdown-item" href="rechargeable-cic-treatment-in-hyderabad.php">Rechargeable CIC</a></li>
+                                        <li><a class="dropdown-item" href="ear-moulds-ear-plugs-treatment-in-hyderabad.php">Ear Moulds/Ear Plugs</a></li>
+                                        <li><a class="dropdown-item" href="hearing-aid-accesssories-treatment-in-hyderabad.php">Hearing Aid Accesssories</a></li>
+                                        <li><a class="dropdown-item" href="hearing-aid-batteries-treatment-in-hyderabad.php">Hearing aid batteries</a></li>
+                                        <li><a class="dropdown-item" href="hearing-aid-services-repair-treatment-in-hyderabad.php">Hearing aid services & repair</a></li>
 
                                     </ul>
                             </li>

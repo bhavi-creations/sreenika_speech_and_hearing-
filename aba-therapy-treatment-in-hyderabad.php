@@ -21,7 +21,7 @@
 
 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6"> q    
                                         <div class="ul-service-details-inner-block">
                                             <h3 class="ul-service-details-inner-title">Key Features:</h3>
 

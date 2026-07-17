@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ) {
             echo "<script>
                 alert('" . $row['reason'] . "');
-                window.location='index.php';
+                window.location='home.php';
             </script>";
             exit;
         }
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($count['total'] >= 3) {
         echo "<script>
             alert('This time slot is FULL');
-            window.location='index.php';
+            window.location='home.php';
         </script>";
         exit;
     }
@@ -186,7 +186,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo "<script>
             alert('Appointment booked successfully');
-            window.location='index.php';
+            window.location='home.php';
         </script>";
     } catch (Exception $e) {
         echo 'Patient Mail Error: ' . $mailPatient->ErrorInfo;

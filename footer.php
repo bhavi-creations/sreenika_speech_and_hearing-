@@ -31,7 +31,7 @@
                 <div class="rjy-footer-widget">
                     <h4>Quick Links</h4>
                     <ul class="rjy-footer-links">
-                        <li><a href="index.php"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="home.php"><i class="bi bi-chevron-right"></i> Home</a></li>
                         <li><a href="about.php"><i class="bi bi-chevron-right"></i> About Us</a></li>
                         <li><a href="service.php"><i class="bi bi-chevron-right"></i> Services</a></li>
                         <li><a href="blogs.php"><i class="bi bi-chevron-right"></i>Blogs </a></li>
