@@ -22,6 +22,97 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+<!-- Common Global Schema (e.g. Organization / WebSite) -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://sreenikaspeechandhearingcenter.com/#medicalclinic",
+      "name": "Sreenika Speech and Hearing Center",
+      "url": "https://sreenikaspeechandhearingcenter.com/",
+      "telephone": "+91-9392189262",
+      "priceRange": "₹₹",
+      "image": "https://sreenikaspeechandhearingcenter.com/wp-content/uploads/logo.png",
+      "description": "Sreenika Speech and Hearing Center provides expert speech therapy, hearing assessment, hearing tests, digital hearing aids, and child development services in Hafeezpet, Hyderabad.",
+      "medicalSpecialty": [
+        "Audiology",
+        "Speech Therapy"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Road No. 12, Allwyn X Road, Indra Reddy Allwyn Colony, Hafeezpet",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "postalCode": "500049",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 17.4911988,
+        "longitude": 78.353091
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      ],
+      "areaServed": [
+        "Hafeezpet",
+        "Miyapur",
+        "Kondapur",
+        "Chandanagar",
+        "Hyderabad"
+      ],
+      "hasMap": "https://maps.google.com/?q=17.4911988,78.353091"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://sreenikaspeechandhearingcenter.com/#organization",
+      "name": "Sreenika Speech and Hearing Center",
+      "url": "https://sreenikaspeechandhearingcenter.com/",
+      "telephone": "+91-9392189262",
+      "logo": "https://sreenikaspeechandhearingcenter.com/wp-content/uploads/logo.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sreenikaspeechandhearingcenter.com/#website",
+      "url": "https://sreenikaspeechandhearingcenter.com/",
+      "name": "Sreenika Speech and Hearing Center",
+      "publisher": {
+        "@id": "https://sreenikaspeechandhearingcenter.com/#organization"
+      }
+    }
+  ]
+}
+    </script>
+
+    <!-- Subpage Specific Schema (Dynamic) -->
+    <?php if (isset($page_schema)): ?>
+        <script type="application/ld+json">
+            <?php echo json_encode($page_schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES); ?>
+        </script>
+    <?php endif; ?>
+
+
+
+
+
+
 </head>
 
 <body>

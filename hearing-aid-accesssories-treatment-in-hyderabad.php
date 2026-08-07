@@ -1,6 +1,24 @@
-<?php include 'header.php'; ?>
+<?php
+$page_schema = [
+  "@context" => "https://schema.org",
+  "@type" => "Service",
+  "serviceType" => ["Digital Hearing Aids", "Speech Therapy"],
+  "provider" => [
+    "@type" => "MedicalClinic",
+    "name" => "Sreenika Speech and Hearing Center"
+  ],
+  "areaServed" => "Hyderabad",
+  "availableChannel" => [
+    "@type" => "ServiceChannel",
+    "servicePhone" => [
+      "@type" => "ContactPoint",
+      "telephone" => "+91-9392189262"
+    ]
+  ]
+];
 
-
+include 'header.php'; 
+?>
 
 <main>
 
